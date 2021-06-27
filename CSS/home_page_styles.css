@@ -1,0 +1,1784 @@
+body {
+
+    background-image: url(../img/a_grande_onda.webp);
+    background-repeat: no-repeat;
+    background-position: 41% 10%;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    height: 100%;
+}
+
+html {
+
+    height: 100%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+
+    position: relative;
+    max-width: 560px;
+    height: 660px;
+    overflow: visible;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0 25px 25px rgba(0,0,0,.5);
+}
+
+.kage {
+
+    margin-top: 5px;
+    background-color: rgb(242, 242, 242);
+    height: 184px;
+    border-radius: 25px;
+    margin-right: 3px;
+}
+
+.kage2 .kage3 .kage4 {
+
+    background-color: rgb(242, 242, 242);
+    height: 184px;
+    margin-top: 5px;
+    border-radius: 25px;
+    margin-right: 3px;
+}
+
+.tarou img {
+
+    width: 259px;
+    border-radius: 25px;
+    margin-right: 10px;
+    margin-left: 3px;
+    float: left;
+}
+
+.daiku img, .pochi img, .onibaba img {
+
+    width: 259px;
+    border-radius: 25px;
+    margin-top: 2.5px;
+    margin-right: 10px;
+    margin-left: 3px;
+    float: left;
+}
+
+.tarou p, .kage2 p, .kage3 p, .kage4 p {
+
+    
+    margin-top: -6px;
+    font-size: 30.5px;
+    text-align: left;
+    line-height: 30px;
+    font-weight: 500;
+    font-family: 'Comic Neue', cursive;
+    color: black;
+}
+
+.tarou h1, .kage2 h1, .kage3 h1, .kage4 h1 {
+
+    margin-top: 3.5px;
+    text-align: center;
+    font-size: 21.5px;
+    font-weight: 900;
+    font-family: 'Comic Neue', cursive;
+    color: black;
+}
+
+.menumobi_close {
+
+    left: 0;
+    right: 0;
+    font-size: 250px;
+    width: 530px;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.menumobi_close2 {
+
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-size: 250px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    background-color: rgba(255, 255, 255, 0.9);
+
+    -webkit-animation: mobi_close_width 0.3s forwards linear;
+}
+
+@-webkit-keyframes mobi_close_width {
+
+    0% {width: 100%;height: 100%;}
+    25% {width: 75%;height: 60%;}
+    50% {width: 50%;height: 50%;}
+    75% {width: 530px;height: 25%;}
+    100% {width: 530px;height: 70px;}
+}
+
+.menumobi_open {
+
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.9);
+
+    -webkit-animation: mobi_open_height 0.4s forwards linear;
+    -webkit-animation: mobi_open_width 0.2s forwards linear;
+}
+
+@-webkit-keyframes mobi_open_height {
+
+    0% {height: 15%;}
+    25% {height: 25%;}
+    75% {height: 50%;}
+    100% {height: 60%;}
+}
+
+@-webkit-keyframes mobi_open_width {
+
+    0% {width: 25%;}
+    25% {width: 50%;}
+    75% {width: 75%;}
+    100% {width: 100%;height: 100%;}
+}
+
+label.arrow_down {
+
+    font-size: 85px;
+    position: absolute;
+    transform: rotate(270deg);
+    color: #5B6170;    
+}
+
+label.arrow_up {
+
+    font-size: 85px;
+    position: absolute;
+    transform: rotate(450deg);
+    align-self: flex-end;
+    color: #5B6170;
+    z-index: 2;
+}
+
+.menumobi_close ul {
+
+    display: none;
+}
+
+.menumobi_close2 ul {
+
+    display: none;
+}
+
+.menumobi_open ul {
+
+    list-style: none;
+    line-height: 21.5vw;
+    text-align: center;
+    align-self: center;
+    font-family: 'Baloo Da', cursive;
+}
+
+.menumobi_open a {
+
+    color: #5B6170;
+    font-size: 10.2vw;
+    text-decoration:none;
+}
+
+label.ThreelineMobi_close {
+
+    color: white;
+    margin-left: 96.5%;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+}
+
+label.ThreelineMobi_close2 {
+
+    color: white;
+    margin-left: 96.5%;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+@-webkit-keyframes Mobi_Threeline_close {
+
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    75% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+.NavigationMobi_open {
+
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.9);
+
+    -webkit-animation: mobi_land_open 0.4s forwards linear;
+}
+
+@-webkit-keyframes mobi_land_open {
+
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    75% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+.NavigationMobi_close {
+
+    display: none;
+}
+
+.NavigationMobi_close2 {
+
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.9);
+
+    -webkit-animation: mobi_land_close 0.4s forwards linear;
+}
+
+@-webkit-keyframes mobi_land_close {
+
+    0% {opacity: 1;}
+    25% {opacity: 1;}
+    75% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.NavigationMobi_open ul {
+
+    margin-top: 5%;
+    list-style: none;
+    line-height: 20vh;
+    text-align: center;
+    align-self: center;
+    font-family: 'Baloo Da', cursive;
+}
+
+.NavigationMobi_close2 ul {
+
+    margin-top: 5%;
+    list-style: none;
+    line-height: 20vh;
+    text-align: center;
+    align-self: center;
+    font-family: 'Baloo Da', cursive;
+}
+
+.NavigationMobi_close2 a {
+
+    color: #5B6170;
+    font-size: 10.2vh;
+    text-decoration:none;
+}
+
+.NavigationMobi_open a {
+
+    color: #5B6170;
+    font-size: 10.2vh;
+    text-decoration:none;
+}
+
+label.ThreelineMobi_open {
+
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 96.5%;
+    position: absolute;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+
+@-webkit-keyframes Mobi_Threeline_open {
+
+    0% {opacity: 1;}
+    25% {opacity: 1;}
+    75% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.x_entity_open {
+
+    color: #5B6170;
+    font-size: 8vh;
+    position: absolute;
+    cursor: pointer;
+    top: 1.5%;
+}
+
+@media (min-width: 576px) {
+
+.content {
+
+    height: 96%;
+    max-width: 560px;
+}
+
+.tarou img {
+
+    width: 259px;
+    border-radius: 25px;
+    margin-right: 10px;
+    margin-left: 3px;
+    float: left;
+}
+
+.daiku img, .pochi img, .onibaba img {
+
+    width: 259px;
+    border-radius: 25px;
+    margin-right: 10px;
+    margin-left: 3px;
+    float: left;
+}
+
+.kage {
+
+    background-color: rgb(242, 242, 242);
+    height: 184px;
+    border-radius: 25px;
+    margin-right: 3px;
+}
+
+.kage2, .kage3, .kage4 {
+
+    background-color: rgb(242, 242, 242);
+    height: 184px;
+    margin-top: 9px;
+    border-radius: 25px;
+    margin-right: 3px;
+}
+
+.tarou p, .kage2 p, .kage3 p, .kage4 p {
+
+    
+    margin-top: 8px;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: left;
+    font-family: 'Comic Neue', cursive;
+    line-height: 25.5px;
+    color: black;
+}
+
+.tarou h1, .kage2 h1, .kage3 h1, .kage4 h1 {
+
+    margin-top: 3.5px;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 900;
+    font-family: 'Comic Neue', cursive;
+    color: black;
+}
+
+label.ThreelineMobi_close {
+
+    color: white;
+    margin-left: 96.5%;
+    cursor: pointer;
+    font-size: 33px;
+    position: absolute;
+}
+
+label.ThreelineMobi_close2 {
+
+    color: white;
+    margin-left: 96.5%;
+    cursor: pointer;
+    font-size: 33px;
+    position: absolute;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+label.ThreelineMobi_open {
+
+    color: white;
+    font-size: 33px;
+    cursor: pointer;
+    margin-left: 96.5%;
+    position: absolute;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+
+#menumobi_close {
+
+    display: none;
+}
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+
+
+.content {
+
+    max-width: 915px;
+    height: 1060px;
+    border-radius: 40px;
+}
+
+.tarou img {
+
+    width: 385px;
+    border-radius: 40px;
+    margin-right: 10px;
+    margin-left: 3px;
+    float: left;
+}
+
+.daiku img, .pochi img, .onibaba img {
+
+    width: 385px;
+    border-radius: 40px;
+    margin-top: 2.5px;
+    margin-right: 10px;
+    margin-left: 3px;
+    float: left;
+}
+
+.kage {
+
+    margin-top: 8.5px;
+    background-color: rgb(242, 242, 242);
+    height: 272px;
+    border-radius: 40px;
+    margin-right: 3px;
+}
+
+.kage2, .kage3, .kage4 {
+
+    background-color: rgb(242, 242, 242);
+    height: 272px;
+    margin-top: 10px;
+    border-radius: 40px;
+    margin-right: 3px;
+}
+
+.kage4 {
+
+    background-color: rgb(242, 242, 242);
+    height: 272px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 40px;
+    margin-right: 3px;
+}
+
+.tarou p, .kage2 p, .kage3 p, .kage4 p {
+
+    font-family: 'Comic Neue', cursive;
+    margin-top: 13px;
+    font-size: 38.1px;
+    font-weight: 500;
+    text-align: left;
+    color: black;
+    line-height: 38.5px;
+}
+
+.tarou h1, .kage2 h1, .kage3 h1, .kage4 h1 {
+
+    margin-top: 3.5px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 900;
+    font-family: 'Comic Neue', cursive;
+    color: black;
+}
+
+#menumobi_close {
+
+    display: flex;
+}
+
+label.ThreelineMobi_open {
+
+    display: none;
+}
+
+.NavigationMobi_open {
+
+    display: none;
+}
+
+label.ThreelineMobi_close {
+
+    display: none;
+}
+}
+
+@media (min-width: 992px) {
+
+
+.content {
+
+    max-width: 835px;
+    height: 965px;
+}
+
+.tarou img {
+
+    width: 366px;
+    border-radius: 25px;
+    margin-right: 10px;
+    margin-left: 3px;
+}
+
+.daiku img, .pochi img, .onibaba img {
+
+    width: 366px;
+    border-radius: 25px;
+    margin-top: 2.5px;
+    margin-right: 10px;
+    margin-left: 3px;
+}
+
+.kage {
+
+    margin-top: 8.5px;
+    height: 259px;
+    border-radius: 25px;
+    margin-right: 3px;
+}
+
+.kage2, .kage3 {
+
+    height: 259px;
+    margin-top: 9.5px;
+    border-radius: 25px;
+    margin-right: 3px;
+}
+
+.kage4 {
+
+    height: 259px;
+    margin-top: 9.5px;
+    margin-bottom: 5px;
+    border-radius: 25px;
+    margin-right: 3px;
+}
+
+.tarou p, .kage2 p, .kage3 p, .kage4 p {
+
+    margin-top: 12px;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 34px;
+}
+
+.tarou h1, .kage2 h1, .kage3 h1, .kage4 h1 {
+
+    margin-top: 3.5px;
+    font-size: 38px;
+    font-weight: 900;
+}
+}
+
+@media (min-width: 992px) and (orientation: landscape) {
+
+
+.content {
+
+    height: 88.5%;
+    max-width: 610px;
+}
+
+.tarou img {
+
+    width: 280px;
+    border-radius: 25px;
+    margin-right: 10px;
+    margin-left: 3px;
+}
+
+.daiku img, .pochi img, .onibaba img {
+
+    width: 280px;
+    border-radius: 25px;
+    margin-top: 4px;
+    margin-right: 10px;
+    margin-left: 3px;
+}
+
+.kage {
+
+    margin-top: 5px;
+    height: 198px;
+    border-radius: 25px;
+    margin-right: 3px;
+}
+
+.kage2, .kage3 {
+
+    height: 198px;
+    margin-top: 9px;
+    border-radius: 25px;
+    margin-right: 3px;
+}
+
+.kage4 {
+
+    height: 198px;
+    margin-top: 9px;
+    margin-bottom: 5px;
+    border-radius: 25px;
+    margin-right: 3px;
+}
+
+.tarou p, .kage2 p, .kage3 p, .kage4 p {
+
+    margin-top: 10px;
+    font-size: 24.9px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.tarou h1, .kage2 h1, .kage3 h1, .kage4 h1 {
+
+    margin-top: 3.5px;
+    font-size: 27px;
+    font-weight: 900;
+}
+
+label.ThreelineMobi_close {
+
+    margin-left: 95.5%;
+    font-size: 34px;
+}
+
+label.ThreelineMobi_close2 {
+
+    margin-left: 95.5%;
+    font-size: 34px;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+label.ThreelineMobi_open {
+
+    font-size: 34px;
+    margin-left: 95.5%;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+}
+
+@media (min-width: 992px) and (height: 600px) {
+
+
+.content {
+
+    height: 96%;
+    max-width: 560px;
+}
+
+.tarou img, .daiku img, .pochi img, .onibaba img {
+
+    width: 259px;
+    border-radius: 25px;
+    margin-right: 10px;
+    margin-left: 3px;
+}
+
+.kage p, .kage2 p, .kage3 p, .kage4 p {
+
+    
+    margin-top: 8px;
+    font-size: 22.5px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.kage h1, .kage2 h1, .kage3 h1, .kage4 h1 {
+
+    margin-top: 3.5px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.kage {
+
+    margin-top: 5px;
+    height: 184px;
+    border-radius: 25px;
+    margin-right: 3px;
+}
+
+.kage2, .kage3 {
+
+    height: 184px;
+    margin-top: 7px;
+    border-radius: 25px;
+    margin-right: 3px;
+}
+
+.kage4 {
+
+    height: 184px;
+    margin-top: 7px;
+    margin-bottom: 3px;
+    border-radius: 25px;
+    margin-right: 3px;
+}
+
+label.ThreelineMobi_close {
+
+    margin-left: 96.5%;
+    font-size: 29.5px;
+}
+
+label.ThreelineMobi_close2 {
+
+    margin-left: 96.5%;
+    font-size: 29.5px;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+label.ThreelineMobi_open {
+
+    font-size: 29.5px;
+    margin-left: 96.5%;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+}
+
+@media (min-width: 1200px) {
+
+
+.content {
+
+    max-width: 540px;
+    height: 92.5%;
+}
+
+.tarou img {
+
+    width: 263px;
+    border-radius: 25px;
+    margin-right: 10px;
+    margin-left: 3px;
+    float: left;
+}
+
+.daiku img, .pochi img, .onibaba img {
+
+    width: 263px;
+    border-radius: 25px;
+    margin-top: 2.5px;
+    margin-right: 10px;
+    margin-left: 3px;
+}
+
+.kage h1, .kage2 h1, .kage3 h1, .kage4 h1 {
+    
+    font-size: 23px;
+    font-weight: 900;
+}
+
+.kage p, .kage2 p, .kage3 p, .kage4 p {
+
+    
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+}
+
+.kage {
+
+    margin-top: 5px;
+    height: 186px;
+    border-radius: 25px;
+    margin-right: 3px;
+}
+
+.kage2, .kage3 {
+
+    height: 186px;
+    margin-top: 7px;
+    border-radius: 25px;
+    margin-right: 3px;
+
+}
+
+.kage4 {
+
+    height: 186px;
+    margin-top: 7px;
+    margin-bottom: 4px;
+    border-radius: 25px;
+    margin-right: 3px;
+}
+
+label.ThreelineMobi_close {
+
+    margin-left: 97%;
+    font-size: 27px;
+}
+
+label.ThreelineMobi_close2 {
+
+    margin-left: 97%;
+    font-size: 27px;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+label.ThreelineMobi_open {
+
+    font-size: 27px;
+    margin-left: 97%;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+}
+
+@media (min-width: 1200px) and (min-height: 750px) {
+
+.content {
+
+    max-width: 680px;
+    height: 95%;
+}
+
+.tarou img, .daiku img, .pochi img, .onibaba img {
+
+    width: 325px;
+    border-radius: 25px;
+    margin-right: 10px;
+    margin-left: 3px;
+}
+
+.kage h1, .kage2 h1, .kage3 h1, .kage4 h1 {
+    
+    font-size: 29.8px;
+    font-weight: 900;
+}
+
+.kage p, .kage2 p, .kage3 p, .kage4 p {
+
+    margin-top: 18px;
+    font-size: 27.5px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.kage {
+
+    margin-top: 7px;
+    height: 230px;
+    border-radius: 25px;
+    margin-right: 3px;
+}
+
+.kage2, .kage3, .kage4 {
+
+    height: 230px;
+    margin-top: 11px;
+    border-radius: 25px;
+    margin-right: 3px;
+}
+
+.kage4 {
+
+    height: 230px;
+    margin-top: 11px;
+    margin-bottom: 3px;
+    border-radius: 25px;
+    margin-right: 3px;    
+}
+
+label.ThreelineMobi_close {
+
+    margin-left: 96.5%;
+    font-size: 36.5px;
+}
+
+label.ThreelineMobi_close2 {
+
+    margin-left: 96.5%;
+    font-size: 36.5px;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+label.ThreelineMobi_open {
+
+    font-size: 36.5px;
+    margin-left: 96.5%;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+}
+
+@media (min-width: 1200px) and (min-height: 850px) {
+
+.content {
+
+    max-width: 875px;
+    height: 95%;
+    border-radius: 45px;
+}
+
+.tarou img, .daiku img, .pochi img, .onibaba img {
+
+    width: 400px;
+    border-radius: 45px;
+    margin-right: 10px;
+    margin-left: 3px;
+}
+
+.kage h1, .kage2 h1, .kage3 h1, .kage4 h1 {
+    
+    font-size: 40.5px;
+    font-weight: 900;
+}
+
+.kage p, .kage2 p, .kage3 p, .kage4 p {
+
+    margin-top: 18px;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 42px;
+}
+
+.kage {
+
+    margin-top: 8px;
+    height: 280px;
+    border-radius: 45px;
+    margin-right: 3px;
+}
+
+.kage2, .kage3, .kage4 {
+
+    height: 280px;
+    margin-top: 15px;
+    border-radius: 45px;
+    margin-right: 3px;
+}
+
+.kage4 {
+
+    height: 280px;
+    margin-top: 15px;
+    margin-bottom: 3px;
+    border-radius: 45px;
+    margin-right: 3px;    
+}
+
+label.ThreelineMobi_close {
+
+    margin-left: 96.5%;
+    font-size: 45px;
+}
+
+label.ThreelineMobi_close2 {
+
+    margin-left: 96.5%;
+    font-size: 45px;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+label.ThreelineMobi_open {
+
+    font-size: 45px;
+    margin-left: 96.5%;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+}
+
+@media (min-width: 2500px) and (min-height: 1400px) {
+
+.content {
+
+    max-width: 1225px;
+    height: 95%;
+    border-radius: 70px;
+    box-shadow: 0 25px 25px rgba(0,0,0,.5);
+}
+
+.tarou img, .daiku img, .pochi img, .onibaba img {
+
+    width: 565px;
+    border-radius: 70px;
+    margin-right: 15px;
+    margin-left: 3px;
+}
+
+.kage h1, .kage2 h1, .kage3 h1, .kage4 h1 {
+    
+    font-size: 56px;
+    font-weight: 900;
+}
+
+.kage p, .kage2 p, .kage3 p, .kage4 p {
+
+    margin-top: 18px;
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.kage {
+
+    margin-top: 13px;
+    height: 398px;
+    border-radius: 70px;
+    margin-right: 3px;
+}
+
+.kage2, .kage3, .kage4 {
+
+    height: 398px;
+    margin-top: 19px;
+    border-radius: 70px;
+    margin-right: 3px;
+}
+
+.kage4 {
+
+    height: 398px;
+    margin-top: 19px;
+    margin-bottom: 3px;
+    border-radius: 70px;
+    margin-right: 3px;    
+}
+
+label.ThreelineMobi_close {
+
+    margin-left: 96.5%;
+    font-size: 70px;
+}
+
+label.ThreelineMobi_close2 {
+
+    margin-left: 96.5%;
+    font-size: 70px;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+label.ThreelineMobi_open {
+
+    font-size: 70px;
+    margin-left: 96.5%;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+
+.NavigationMobi_open a {
+
+    font-size: 135px;
+}
+
+.NavigationMobi_close2 a {
+
+    font-size: 135px;
+}
+
+.NavigationMobi_open ul {
+
+    line-height: 280px;
+}
+
+.NavigationMobi_close2 ul {
+
+    line-height: 280px;
+}
+
+.x_entity_open {
+
+    font-size: 100px;
+    top: 1.5%;
+}
+}
+
+@media (min-height: 2500px) and (orientation: portrait) {
+
+.content {
+
+    max-width: 1300px;
+    height: 1570px;
+    border-radius: 65px;
+    box-shadow: 0 20px 20px rgba(0,0,0,.5);
+}
+
+.tarou img {
+
+    width: 560px;
+    border-radius: 65px;
+    margin-right: 17px;
+    margin-left: 3px;
+}
+
+.daiku img, .pochi img, .onibaba img {
+
+    width: 560px;
+    border-radius: 65px;
+    margin-top: 2.5px;
+    margin-right: 17px;
+    margin-left: 3px;
+}
+
+.kage {
+
+    margin-top: 8.5px;
+    height: 400px;
+    border-radius: 65px;
+    margin-right: 3px;
+}
+
+.kage2, .kage3, .kage4 {
+
+    height: 400px;
+    margin-top: 16px;
+    border-radius: 65px;
+    margin-right: 3px;
+}
+
+.kage4 {
+
+    height: 400px;
+    margin-top: 16px;
+    margin-bottom: 5px;
+    border-radius: 65px;
+    margin-right: 3px;
+}
+
+.tarou p, .kage2 p, .kage3 p, .kage4 p {
+
+    margin-top: 13px;
+    font-size: 57px;
+    font-weight: 500;
+    line-height: 54px;
+}
+
+.tarou h1, .kage2 h1, .kage3 h1, .kage4 h1 {
+
+    margin-top: 3.5px;
+    font-size: 59.4px;
+    font-weight: 900;
+}
+
+#menumobi_close {
+
+    display: flex;
+}
+
+label.ThreelineMobi_open {
+
+    display: none;
+}
+
+.NavigationMobi_open {
+
+    display: none;
+}
+
+label.ThreelineMobi_close {
+
+    display: none;
+}
+
+.menumobi_close {
+
+    font-size: 250px;
+    width: 850px;
+    height: 115px;
+    border-radius: 0px 0px 45px 45px;
+    box-shadow: 0 6px 16px rgba(0,0,0,.5);
+}
+
+.menumobi_close2 {
+
+    font-size: 250px;
+    width: 850px;
+    height: 115px;
+    border-radius: 0px 0px 45px 45px;
+    box-shadow: 0 6px 16px rgba(0,0,0,.5);
+
+    -webkit-animation: mobi_close_width 0.3s forwards linear;
+}
+
+@-webkit-keyframes mobi_close_width {
+
+    0% {width: 100%;height: 100%;}
+    25% {width: 75%;height: 60%;}
+    50% {width: 50%;height: 50%;}
+    75% {width: 850px;height: 25%;}
+    100% {width: 850px;height: 115px;}
+}
+
+label.arrow_down {
+
+    font-size: 140px;
+}
+
+label.arrow_up {
+
+    font-size: 140px;
+}
+
+.menumobi_open ul {
+
+    line-height: 285px;
+}
+
+.menumobi_open a {
+
+    font-size: 150px;
+}
+}
+
+@media (min-width: 3800px) and (min-height: 2140px) {
+
+.content {
+
+    max-width: 1825px;
+    height: 95%;
+    border-radius: 100px;
+    box-shadow: 0 35px 35px rgba(0,0,0,.5);
+}
+
+.tarou img, .daiku img, .pochi img, .onibaba img {
+
+    width: 840px;
+    border-radius: 100px;
+    margin-right: 20px;
+    margin-left: 3px;
+}
+
+.kage h1, .kage2 h1, .kage3 h1, .kage4 h1 {
+    
+    font-size: 83px;
+    font-weight: 900;
+}
+
+.kage p, .kage2 p, .kage3 p, .kage4 p {
+
+    margin-top: 18px;
+    font-size: 82px;
+    font-weight: 500;
+    line-height: 76px;
+}
+
+.kage {
+
+    margin-top: 16px;
+    height: 595px;
+    border-radius: 100px;
+    margin-right: 3px;
+}
+
+.kage2, .kage3, .kage4 {
+
+    height: 595px;
+    margin-top: 28px;
+    border-radius: 100px;
+    margin-right: 3px;
+}
+
+.kage4 {
+
+    height: 595px;
+    margin-top: 28px;
+    margin-bottom: 3px;
+    border-radius: 100px;
+    margin-right: 3px;    
+}
+
+label.ThreelineMobi_close {
+
+    margin-left: 96.5%;
+    font-size: 105px;
+}
+
+label.ThreelineMobi_close2 {
+
+    margin-left: 96.5%;
+    font-size: 105px;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+label.ThreelineMobi_open {
+
+    font-size: 105px;
+    margin-left: 96.5%;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+
+.NavigationMobi_open a {
+
+    font-size: 200px;
+}
+
+.NavigationMobi_close2 a {
+
+    font-size: 200px;
+}
+
+.NavigationMobi_open ul {
+
+    line-height: 420px;
+}
+
+.NavigationMobi_close2 ul {
+
+    line-height: 420px;
+}
+
+.x_entity_open {
+
+    font-size: 150px;
+    top: 1.5%;
+}
+}
+
+@media (min-height: 3800px) and (orientation: portrait) {
+
+.content {
+
+    max-width: 1950px;
+    height: 2350px;
+    border-radius: 90px;
+    box-shadow: 0 65px 65px rgba(0,0,0,.5);
+}
+
+.tarou img {
+
+    width: 845px;
+    border-radius: 90px;
+    margin-right: 20px;
+    margin-left: 3px;
+}
+
+.daiku img, .pochi img, .onibaba img {
+
+    width: 845px;
+    border-radius: 90px;
+    margin-top: 2.5px;
+    margin-right: 20px;
+    margin-left: 3px;
+}
+
+.kage {
+
+    margin-top: 18px;
+    height: 605px;
+    border-radius: 90px;
+    margin-right: 3px;
+}
+
+.kage2, .kage3, .kage4 {
+
+    height: 605px;
+    margin-top: 26px;
+    border-radius: 90px;
+    margin-right: 3px;
+}
+
+.kage4 {
+
+    height: 605px;
+    margin-top: 26px;
+    margin-bottom: 5px;
+    border-radius: 90px;
+    margin-right: 3px;
+}
+
+.tarou p, .kage2 p, .kage3 p, .kage4 p {
+
+    margin-top: 13px;
+    font-size: 85.4px;
+    font-weight: 500;
+    line-height: 88px;
+}
+
+.tarou h1, .kage2 h1, .kage3 h1, .kage4 h1 {
+
+    margin-top: 3.5px;
+    font-size: 95px;
+    font-weight: 900;
+}
+
+#menumobi_close {
+
+    display: flex;
+}
+
+label.ThreelineMobi_open {
+
+    display: none;
+}
+
+.NavigationMobi_open {
+
+    display: none;
+}
+
+label.ThreelineMobi_close {
+
+    display: none;
+}
+
+.menumobi_close {
+
+    font-size: 250px;
+    width: 1250px;
+    height: 175px;
+    border-radius: 0px 0px 65px 65px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.5);
+}
+
+.menumobi_close2 {
+
+    font-size: 250px;
+    width: 1250px;
+    height: 175px;
+    border-radius: 0px 0px 65px 65px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.5);
+
+    -webkit-animation: mobi_close_width 0.3s forwards linear;
+}
+
+@-webkit-keyframes mobi_close_width {
+
+    0% {width: 100%;height: 100%;}
+    25% {width: 75%;height: 60%;}
+    50% {width: 50%;height: 50%;}
+    75% {width: 1250px;height: 25%;}
+    100% {width: 1250px;height: 175px;}
+}
+
+label.arrow_down {
+
+    font-size: 210px;
+}
+
+label.arrow_up {
+
+    font-size: 210px;
+}
+
+.menumobi_open ul {
+
+    line-height: 425px;
+}
+
+.menumobi_open a {
+
+    font-size: 230px;
+}
+}
+
+@media (min-width: 7680px) and (min-height: 4320px) {
+
+.content {
+
+    max-width: 3650px;
+    height: 95%;
+    border-radius: 200px;
+    box-shadow: 0 95px 95px rgba(0,0,0,.5);
+}
+
+.tarou img, .daiku img, .pochi img, .onibaba img {
+
+    width: 1700px;
+    border-radius: 200px;
+    margin-right: 35px;
+    margin-left: 10px;
+}
+
+.kage h1, .kage2 h1, .kage3 h1, .kage4 h1 {
+    
+    font-size: 167px;
+    font-weight: 900;
+}
+
+.kage p, .kage2 p, .kage3 p, .kage4 p {
+
+    margin-top: 24px;
+    font-size: 160px;
+    font-weight: 500;
+    line-height: 145px;
+}
+
+.kage {
+
+    margin-top: 28px;
+    height: 1205px;
+    border-radius: 80px;
+    margin-right: 3px;
+}
+
+.kage2, .kage3, .kage4 {
+
+    height: 1205px;
+    margin-top: 50px;
+    border-radius: 80px;
+    margin-right: 3px;
+}
+
+.kage4 {
+
+    height: 1205px;
+    margin-top: 50px;
+    margin-bottom: 3px;
+    border-radius: 80px;
+    margin-right: 3px;    
+}
+
+label.ThreelineMobi_close {
+
+    margin-left: 96.5%;
+    font-size: 200px;
+}
+
+label.ThreelineMobi_close2 {
+
+    margin-left: 96.5%;
+    font-size: 200px;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+label.ThreelineMobi_open {
+
+    font-size: 200px;
+    margin-left: 96.5%;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+
+.NavigationMobi_open a {
+
+    color: #5B6170;
+    font-size: 400px;
+}
+
+.NavigationMobi_close2 a {
+
+    font-size: 400px;
+}
+
+.NavigationMobi_open ul {
+
+    line-height: 835px;
+}
+
+.NavigationMobi_close2 ul {
+
+    line-height: 835px;
+}
+
+.x_entity_open {
+
+    font-size: 300px;
+    top: 1.5%;
+}
+}
+
+@media (min-height: 4300px) and (orientation: portrait) {
+
+.content {
+
+    max-width: 3900px;
+    height: 4700px;
+    border-radius: 190px;
+    box-shadow: 0 85px 85px rgba(0,0,0,.5);
+}
+
+.tarou img {
+
+    width: 1720px;
+    border-radius: 190px;
+    margin-right: 50px;
+    margin-left: 15px;
+    float: left;
+}
+
+.daiku img, .pochi img, .onibaba img {
+
+    width: 1720px;
+    border-radius: 190px;
+    margin-top: 2.5px;
+    margin-right: 50px;
+    margin-left: 15px;
+}
+
+.kage {
+
+    margin-top: 48px;
+    height: 1225px;
+    border-radius: 190px;
+    margin-right: 3px;
+}
+
+.kage2, .kage3, .kage4 {
+
+    height: 1225px;
+    margin-top: 66px;
+    border-radius: 190px;
+    margin-right: 3px;
+}
+
+.kage4 {
+
+    height: 1225px;
+    margin-top: 66px;
+    margin-bottom: 5px;
+    border-radius: 190px;
+    margin-right: 3px;
+}
+
+.tarou p, .kage2 p, .kage3 p, .kage4 p {
+
+    margin-top: 20px;
+    font-size: 175px;
+    font-weight: 500;
+    line-height: 155px;
+}
+
+.tarou h1, .kage2 h1, .kage3 h1, .kage4 h1 {
+
+    margin-top: 2px;
+    font-size: 185px;
+    font-weight: 900;
+}
+
+#menumobi_close {
+
+    display: flex;
+}
+
+label.ThreelineMobi_open {
+
+    display: none;
+}
+
+.NavigationMobi_open {
+
+    display: none;
+}
+
+label.ThreelineMobi_close {
+
+    display: none;
+}
+
+.menumobi_close {
+
+    font-size: 250px;
+    width: 2500px;
+    height: 348px;
+    border-radius: 0px 0px 125px 125px;
+    box-shadow: 0 20px 40px rgba(0,0,0,.5);
+}
+
+.menumobi_close2 {
+
+    font-size: 250px;
+    width: 2500px;
+    height: 348px;
+    border-radius: 0px 0px 125px 125px;
+    box-shadow: 0 20px 40px rgba(0,0,0,.5);
+
+    -webkit-animation: mobi_close_width 0.3s forwards linear;
+}
+
+@-webkit-keyframes mobi_close_width {
+
+    0% {width: 100%;height: 100%;}
+    25% {width: 75%;height: 60%;}
+    50% {width: 50%;height: 50%;}
+    75% {width: 2500px;height: 25%;}
+    100% {width: 2500px;height: 348px;}
+}
+
+label.arrow_down {
+
+    font-size: 424px;
+}
+
+label.arrow_up {
+
+    font-size: 424px;
+}
+
+.menumobi_open ul {
+
+    line-height: 845px;
+}
+
+.menumobi_open a {
+
+    font-size: 470px;
+}
+}

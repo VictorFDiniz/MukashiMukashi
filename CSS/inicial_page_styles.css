@@ -1,0 +1,2501 @@
+body {
+
+    background-image: url(../img/a_grande_onda.webp);
+    background-repeat: no-repeat;
+    background-position: 41% 10%;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    height: 100%;
+}
+
+html {
+
+	height: 100%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+
+    font-weight: 200;
+}
+
+.inicial_text {
+
+    margin: auto;
+    margin-top: 3vh;
+    font-size: 2.7vh;
+    line-height: 5.2vh;
+    font-family: 'Comic Neue', cursive;
+}
+
+.down_text p {
+
+    font-size: 2vh;
+    text-align: center;
+}
+
+.container {
+
+	width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+
+	width: 560px;
+	height: 660px;
+    position: relative;
+	border-radius: 30px;
+    background-color: white;
+	box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+
+.menumobi_close {
+
+    left: 0;
+    right: 0;
+    font-size: 250px;
+    width: 530px;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.menumobi_close2 {
+
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-size: 250px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    background-color: rgba(255, 255, 255, 0.9);
+
+    -webkit-animation: mobi_close_width 0.3s forwards linear;
+}
+
+@-webkit-keyframes mobi_close_width {
+
+    0% {width: 100%;height: 100%;}
+    25% {width: 75%;height: 60%;}
+    50% {width: 50%;height: 50%;}
+    75% {width: 530px;height: 25%;}
+    100% {width: 530px;height: 70px;}
+}
+
+.menumobi_open {
+
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 60%;
+    margin: auto;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+
+    -webkit-animation: mobi_open_height 0.4s forwards linear;
+    -webkit-animation: mobi_open_width 0.2s forwards linear;
+}
+
+@-webkit-keyframes mobi_open_height {
+
+    0% {height: 15%;}
+    25% {height: 25%;}
+    75% {height: 50%;}
+    100% {height: 60%;}
+}
+
+@-webkit-keyframes mobi_open_width {
+
+    0% {width: 25%;}
+    25% {width: 50%;}
+    75% {width: 75%;}
+    100% {width: 100%;height: 100%;}
+}
+
+label.arrow_down {
+
+    font-size: 85px;
+    position: absolute;
+    transform: rotate(270deg);
+    color: #5B6170;    
+}
+
+label.arrow_up {
+
+    font-size: 85px;
+    position: absolute;
+    transform: rotate(450deg);
+    align-self: flex-end;
+    color: #5B6170;
+    z-index: 2;
+}
+
+.menumobi_close ul {
+
+    display: none;
+}
+
+.menumobi_close2 ul {
+
+    display: none;
+}
+
+.menumobi_open ul {
+
+    list-style: none;
+    line-height: 21.5vw;
+    text-align: center;
+    align-self: center;
+    font-family: 'Baloo Da', cursive;
+}
+
+.menumobi_open a {
+
+    color: #5B6170;
+    font-size: 10.2vw;
+    text-decoration:none;
+}
+
+label.ThreelineMobi_close {
+
+    color: white;
+    margin-left: 96.5%;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+}
+
+label.ThreelineMobi_close2 {
+
+    color: white;
+    margin-left: 96.5%;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+@-webkit-keyframes Mobi_Threeline_close {
+
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    75% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+.NavigationMobi_open {
+
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+
+    -webkit-animation: mobi_land_open 0.4s forwards linear;
+}
+
+@-webkit-keyframes mobi_land_open {
+
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    75% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+.NavigationMobi_close {
+
+    display: none;
+}
+
+.NavigationMobi_close2 {
+
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+
+    -webkit-animation: mobi_land_close 0.4s forwards linear;
+}
+
+@-webkit-keyframes mobi_land_close {
+
+    0% {opacity: 1;}
+    25% {opacity: 1;}
+    75% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.NavigationMobi_open ul {
+
+    margin-top: 5%;
+    list-style: none;
+    line-height: 20vh;
+    text-align: center;
+    align-self: center;
+    font-family: 'Baloo Da', cursive;
+}
+
+.NavigationMobi_close2 ul {
+
+    margin-top: 5%;
+    list-style: none;
+    line-height: 20vh;
+    text-align: center;
+    align-self: center;
+    font-family: 'Baloo Da', cursive;
+}
+
+.NavigationMobi_close2 a {
+
+    color: #5B6170;
+    font-size: 10.2vh;
+    text-decoration:none;
+}
+
+.NavigationMobi_open a {
+
+    color: #5B6170;
+    font-size: 10.2vh;
+    text-decoration:none;
+}
+
+label.ThreelineMobi_open {
+
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 96.5%;
+    position: absolute;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+
+@-webkit-keyframes Mobi_Threeline_open {
+
+    0% {opacity: 1;}
+    25% {opacity: 1;}
+    75% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.x_entity_open {
+
+    color: #5B6170;
+    font-size: 8vh;
+    position: absolute;
+    cursor: pointer;
+    top: 1.5%;
+}
+
+@media (min-width: 576px) {
+
+.content {
+
+    width: 560px;
+    height: 96%;
+    border-radius: 30px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+
+p {
+
+    font-family: 'Comic Neue', cursive;
+    font-weight: lighter;
+    text-align: left;
+    font-size: 3vw;
+    margin-right: 45px;
+    margin-left: 45px;
+    line-height: 3.5vw;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.pic {
+
+    padding-top: 7px;
+    width: 410px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0px;
+}
+
+.inicial_text {
+
+    margin-top: 8vh;
+    font-size: 4.5vh;
+    line-height: 7.8vh;
+    text-align: center;
+    font-family: 'Comic Neue', cursive;
+}
+
+.down_text {
+ 
+    display: none;
+}
+
+.next_land_desk {
+
+    display: none;
+}
+
+.previous_land_desk {
+
+    display: none;
+}
+
+.next_portrait_desk {
+
+    display: none;
+}
+
+.previous_portrait_desk {
+
+    display: none;
+}
+
+.next_portrait_mobi {
+
+    display: none;
+}
+
+.previous_portrait_mobi {
+
+    display: none;
+}
+
+.next_land_mobi img {
+
+    width: 37px;
+    margin-right: 4%;
+    margin-top: 75px;
+    cursor: pointer;
+    padding-bottom: 3%;
+}
+
+.previous_land_mobi img {
+
+    width: 37px;
+    margin-left: 4%;
+    margin-top: 75px;
+    cursor: pointer;
+    padding-bottom: 3%;
+}
+
+label.ThreelineMobi_close {
+
+    margin-left: 96.5%;
+    font-size: 33px;
+}
+
+label.ThreelineMobi_close2 {
+
+    margin-left: 96.5%;
+    font-size: 33px;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+label.ThreelineMobi_open {
+
+    font-size: 33px;
+    margin-left: 96.5%;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+
+#menumobi_close {
+
+    display: none;
+}
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+
+.content {
+
+    width: 915px;
+    height: 1060px;
+    border-radius: 40px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+
+p {
+
+    font-weight: 500;
+    text-align: left;
+    font-size: 4.1vw;
+    margin-right: 55px;
+    margin-left: 55px;
+    line-height: 4.5vw;
+    overflow: hidden;
+    margin-top: 20px;
+    font-family: 'Comic Neue', cursive;
+}
+
+.pic {
+
+    padding-top: 10px;
+    width: 68%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0px;
+}
+
+.inicial_text {
+
+    text-align: center;
+    margin-top: 2.8vw;
+    font-size: 3.5vw;
+    line-height: 6.5vw;
+    font-family: 'Comic Neue', cursive;
+}
+
+.down_text {
+
+    display: inline;    
+}
+
+.down_text p {
+
+    font-size: 2.4vw;
+    margin-top: 4vw;
+}
+
+.next_land_desk {
+
+    display: none;
+}
+
+.previous_land_desk {
+
+    display: none;
+}
+
+.next_portrait_desk {
+
+    display: none;
+}
+
+.previous_portrait_desk {
+
+    display: none;
+}
+
+.next_land_mobi {
+
+    display: none;
+}
+
+.previous_land_mobi {
+
+    display: none;
+}
+
+.next_portrait_mobi {
+
+    display: inline;
+}
+
+.next_portrait_mobi img {
+
+    width: 52px;
+    left: 89%;
+    bottom: 5px;
+    opacity: 0;
+    cursor:pointer;
+    padding-bottom: 3%;
+    position: absolute;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 6s;
+}
+
+.next_portrait_mobi img:hover {
+
+    width: 52px;
+    left: 89%;
+    bottom: 5px;
+    opacity: 1;
+    cursor:pointer;
+    padding-bottom: 3%;
+    position: absolute;
+    display: block;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 0.6s;
+}
+
+.previous_portrait_mobi {
+
+    display: inline;
+}
+
+.previous_portrait_mobi img {
+
+    width: 52px;
+    bottom: 5px;
+    right: 89%;
+    opacity: 0;
+    cursor:pointer;
+    padding-bottom: 3%;
+    position: absolute;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 6s;
+}
+
+.previous_portrait_mobi img:hover {
+
+    width: 52px;
+    bottom: 5px;
+    right: 89%;
+    opacity: 1;
+    cursor:pointer;
+    padding-bottom: 3%;
+    position: absolute;
+    display: block;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 0.6s;
+}
+
+@-webkit-keyframes botao {
+
+    0% {opacity: 1;}
+    50% {opacity: 1;}
+    75% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@-webkit-keyframes botaoo {
+
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#menumobi_close {
+
+    display: flex;
+}
+
+label.ThreelineMobi_open {
+
+    display: none;
+}
+
+.NavigationMobi_open {
+
+    display: none;
+}
+
+label.ThreelineMobi_close {
+
+    display: none;
+}
+}
+
+@media (min-width: 992px) {
+
+.content {
+
+    width: 835px;
+    height: 965px;
+    border-radius: 30px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+
+p {
+
+    font-family: 'Comic Neue', cursive;
+    font-weight: 500;
+    text-align: left;
+    font-size: 38px;
+    margin-right: 50px;
+    margin-left: 50px;
+    line-height: 40px;
+    overflow: hidden;
+}
+
+.pic {
+
+    padding-top: 0.5vh;
+    width: 70%;
+}
+
+.next_land_desk {
+
+    display: none;
+}
+
+.previous_land_desk {
+
+    display: none;
+}
+
+.next_portrait_desk {
+
+    display: none;
+}
+
+.previous_portrait_desk {
+
+    display: none;
+}
+
+.next_land_mobi {
+
+    display: none;
+}
+
+.previous_land_mobi {
+
+    display: none;
+}
+
+.next_portrait_mobi img {
+
+    width: 48px;
+    left: 89%;
+    bottom: 5px;
+    opacity: 0;
+    cursor:pointer;
+    position: absolute;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 6s;
+}
+
+.next_portrait_mobi img:hover {
+
+    width: 48px;
+    left: 89%;
+    bottom: 5px;
+    opacity: 1;
+    cursor:pointer;
+    position: absolute;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 0.6s;
+}
+
+.previous_portrait_mobi img {
+
+    width: 48px;
+    bottom: 5px;
+    right: 89%;
+    opacity: 0;
+    cursor:pointer;
+    position: absolute;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 6s;
+}
+
+.previous_portrait_mobi img:hover {
+
+    width: 48px;
+    bottom: 5px;
+    right: 89%;
+    opacity: 1;
+    cursor:pointer;
+    position: absolute;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 0.6s;
+}
+
+@-webkit-keyframes botao {
+
+    0% {opacity: 1;}
+    50% {opacity: 1;}
+    75% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@-webkit-keyframes botaoo {
+
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+}
+
+@media (min-width: 992px) and (orientation: landscape) {
+
+.content {
+
+    height: 88.5%;
+    width: 610px;
+    border-radius: 30px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+
+.pic {
+
+    padding-top: 0.5vh;
+    width: 70%;
+}
+
+p {
+
+    font-size: 3.5vh;
+    margin-top: 1.5vh;
+    margin-right: 30px; 
+    margin-left: 30px;
+    line-height: 3.7vh;
+}
+
+.next_land_desk {
+
+    display: none;
+}
+
+.previous_land_desk {
+
+    display: none;
+}
+
+.next_portrait_desk {
+
+    display: none;
+}
+
+.previous_portrait_desk {
+
+    display: none;
+}
+
+.next_portrait_mobi {
+
+    display: none;
+}
+
+.previous_portrait_mobi {
+
+    display: none;
+}
+
+.next_land_mobi {
+
+    display: inline;
+}
+
+.next_land_mobi img {
+
+    width: 37px;
+    margin-right: 4%;
+    margin-top: 75px;
+    padding-bottom: 3%;
+    cursor:pointer;
+}
+
+.previous_land_mobi {
+
+    display: inline;
+}
+
+.previous_land_mobi img {
+
+    width: 37px;
+    margin-top: 75px;
+    margin-left: 4%;
+    padding-bottom: 3%;
+    cursor:pointer;
+}
+
+label.ThreelineMobi_close {
+
+    margin-left: 95.5%;
+    font-size: 34px;
+}
+
+label.ThreelineMobi_close2 {
+
+    margin-left: 95.5%;
+    font-size: 34px;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+label.ThreelineMobi_open {
+
+    font-size: 34px;
+    margin-left: 95.5%;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+}
+
+@media (min-width: 992px) and (height: 600px) {
+
+.content {
+
+    width: 560px;
+    height: 96%;
+    border-radius: 30px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+
+p {
+
+    font-size: 4.5vh;
+    margin-right: 35px;
+    margin-left: 35px;
+    line-height: 6vh;
+    margin-top: 15px;
+}
+
+.pic {
+
+    width: 74%;
+    padding-top: 5px;
+}
+
+.next_land_desk {
+
+    display: none;
+}
+
+.previous_land_desk {
+
+    display: none;
+}
+
+.next_portrait_desk {
+
+    display: none;
+}
+
+.previous_portrait_desk {
+
+    display: none;
+}
+
+.next_portrait_mobi {
+
+    display: none;
+}
+
+.previous_portrait_mobi {
+
+    display: none;
+}
+
+.next_land_mobi img {
+
+    width: 37px;
+    margin-right: 4%;
+    margin-top: 75px;
+    padding-bottom: 3%;
+    cursor:pointer;
+}
+
+.previous_land_mobi img {
+
+    width: 37px;
+    margin-right: 4%;
+    margin-top: 75px;
+    padding-bottom: 3%;
+    cursor: pointer;
+}
+
+label.ThreelineMobi_close {
+
+    margin-left: 96.5%;
+    font-size: 29.5px;
+}
+
+label.ThreelineMobi_close2 {
+
+    margin-left: 96.5%;
+    font-size: 29.5px;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+label.ThreelineMobi_open {
+
+    font-size: 29.5px;
+    margin-left: 96.5%;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+}
+
+@media (min-width: 1200px) {
+
+.content {
+
+    width: 540px;
+    height: 92.5%;
+    border-radius: 30px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+
+.pic {
+
+    padding-top: 0.8vh;
+    width: 68%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inicial_text {
+
+    margin: auto;
+    margin-top: 3vh;
+    font-size: 2.7vh;
+    line-height: 5.2vh;
+    font-family: 'Comic Neue', cursive;
+}
+
+.down_text {
+
+    display: inline;
+}
+
+.down_text p {
+
+    font-size: 2vh;
+    margin-top: 4.1vh;
+    text-align: center;
+}
+
+p {
+
+    font-family: 'Comic Neue', cursive;
+    text-align: left;
+    font-size: 3.2vh;
+    margin-right: 5vh;
+    margin-left: 5vh;
+    line-height: 4.2vh;
+    margin-top: 2.5vh;
+}
+
+.next_portrait_mobi {
+
+    display: none;
+}
+
+.previous_portrait_mobi {
+
+    display: none;
+}
+
+.next_portrait_desk {
+
+    display: none;
+}
+
+.previous_portrait_desk {
+
+    display: none;
+}
+
+.next_land_mobi {
+
+    display: none;
+}
+
+.previous_land_mobi {
+
+    display: none;
+}
+
+.next_land_desk {
+
+    display: inline;
+}
+
+.next_land_desk img {
+
+    width: 5.2vh;
+    left: 89%;
+    opacity: 0;
+    bottom: 3%;
+    cursor: pointer;
+    position: absolute;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 4s;
+}
+
+.next_land_desk img:hover {
+
+    width: 5.2vh;
+    left: 89%;
+    opacity: 1;
+    bottom: 3%;
+    cursor: pointer;
+    position: absolute;
+
+    -webkit-animation-name: botaoo;
+    -webkit-animation-duration: 0.6s;
+}
+
+.previous_land_desk {
+
+    display: inline;
+}
+
+.previous_land_desk img {
+
+    width: 5.2vh;
+    right: 89%;
+    opacity: 0;
+    bottom: 3%;
+    cursor: pointer;
+    position: absolute;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 4s;
+}
+
+.previous_land_desk img:hover {
+
+    width: 5.2vh;
+    right: 89%;
+    opacity: 1;
+    bottom: 3%;
+    cursor: pointer;
+    position: absolute;
+
+    -webkit-animation-name: botaoo;
+    -webkit-animation-duration: 0.6s;
+}
+
+@-webkit-keyframes botao {
+
+    0% {opacity: 1;}
+    50% {opacity: 1;}
+    75% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@-webkit-keyframes botaoo {
+
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+label.ThreelineMobi_close {
+
+    margin-left: 97%;
+    font-size: 27px;
+}
+
+label.ThreelineMobi_close2 {
+
+    margin-left: 97%;
+    font-size: 27px;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+label.ThreelineMobi_open {
+
+    font-size: 27px;
+    margin-left: 97%;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+}
+
+@media (min-width: 1200px) and (min-height: 750px) {
+
+.content {
+
+    width: 680px;
+    height: 95%;
+    border-radius: 30px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+
+p {
+
+    font-size: 3.4vh;
+}
+
+.inicial_text {
+
+    margin: auto;
+    margin-top: 3vh;
+    font-size: 2.9vh;
+    line-height: 5.3vh;
+    font-family: 'Comic Neue', cursive;
+}
+
+.down_text p {
+
+    font-size: 2.1vh;
+    margin-top: 4.5vh;
+    text-align: center;
+}
+
+.next_portrait_mobi {
+
+    display: none;
+}
+
+.previous_portrait_mobi {
+
+    display: none;
+}
+
+.next_land_mobi {
+
+    display: none;
+}
+
+.previous_land_mobi {
+
+    display: none;
+}
+
+.next_portrait_desk {
+
+    display: none;
+}
+
+.previous_portrait_desk {
+
+    display: none;
+}
+
+.next_land_desk {
+
+    display: inline;
+}
+
+.next_land_desk img {
+
+    left: 89%;
+    opacity: 0;
+    bottom: 17px;
+    margin-right: 4%;
+    position: absolute;
+    padding-bottom: 0%;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 4s;
+}
+
+.next_land_desk img:hover {
+
+    bottom: 17px;
+    left: 89%;
+    opacity: 1;
+
+    -webkit-animation-name: botaoo;
+    -webkit-animation-duration: 0.6s;
+}
+
+.previous_land_desk {
+
+    display: inline;
+}
+
+.previous_land_desk img {
+
+    right: 89%;
+    opacity: 0;
+    bottom: 17px;
+    margin-left: 4%;
+    position: absolute;
+    padding-bottom: 0%;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 4s;
+}
+
+.previous_land_desk img:hover {
+
+    bottom: 17px;
+    right: 89%;
+    opacity: 1;
+
+    -webkit-animation-name: botaoo;
+    -webkit-animation-duration: 0.6s;
+}
+
+@-webkit-keyframes botao {
+
+    0% {opacity: 1;}
+    50% {opacity: 1;}
+    75% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@-webkit-keyframes botaoo {
+
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+label.ThreelineMobi_close {
+
+    margin-left: 96.5%;
+    font-size: 36.5px;
+}
+
+label.ThreelineMobi_close2 {
+
+    margin-left: 96.5%;
+    font-size: 36.5px;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+label.ThreelineMobi_open {
+
+    font-size: 36.5px;
+    margin-left: 96.5%;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+}
+
+@media (min-width: 1200px) and (min-height: 850px) {
+
+.content {
+
+    width: 875px;
+    height: 95%;
+    border-radius: 45px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+
+.pic {
+
+    padding-top: 0.5vh;
+    width: 60%;
+}
+
+p {
+
+    margin-top: 1.5vh;
+}
+
+.inicial_text {
+
+    margin: auto;
+    margin-top: 3vh;
+    font-size: 2.7vh;
+    line-height: 5.2vh;
+    font-family: 'Comic Neue', cursive;
+}
+
+.down_text {
+
+    margin-top: 4vh;
+}
+
+.down_text p {
+
+    font-size: 2vh;
+    text-align: center;
+}
+
+.next_portrait_mobi {
+
+    display: none;
+}
+
+.previous_portrait_mobi {
+
+    display: none;
+}
+
+.next_land_mobi {
+
+    display: none;
+}
+
+.previous_land_mobi {
+
+    display: none;
+}
+
+.next_portrait_desk {
+
+    display: none;
+}
+
+.previous_portrait_desk {
+
+    display: none;
+}
+
+.next_land_desk {
+
+    display: inline;
+}
+
+.next_land_desk img {
+
+    left: 89%;
+    bottom: 5px;
+    opacity: 0;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 4s;
+}
+
+.previous_land_desk {
+
+    display: inline;
+}
+
+.previous_land_desk img {
+
+    bottom: 5px;
+    right: 89%;
+    opacity: 0;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 4s;
+}
+
+.next_land_desk img:hover {
+
+    bottom: 5px;
+    left: 89%;
+    opacity: 1;
+
+    -webkit-animation-name: botaoo;
+    -webkit-animation-duration: 0.6s;
+}
+
+.previous_land_desk img:hover {
+
+    bottom: 5px;
+    right: 89%;
+    opacity: 1;
+
+    -webkit-animation-name: botaoo;
+    -webkit-animation-duration: 0.6s;
+}
+
+@-webkit-keyframes botao {
+
+    0% {opacity: 1;}
+    50% {opacity: 1;}
+    75% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@-webkit-keyframes botaoo {
+
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+label.ThreelineMobi_close {
+
+    margin-left: 96.5%;
+    font-size: 45px;
+}
+
+label.ThreelineMobi_close2 {
+
+    margin-left: 96.5%;
+    font-size: 45px;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+label.ThreelineMobi_open {
+
+    font-size: 45px;
+    margin-left: 96.5%;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+}
+
+@media (min-width: 2500px) and (min-height: 1400px) {
+
+.content {
+
+    width: 1225px;
+    height: 95%;
+    border-radius: 70px;
+    box-shadow: 0 25px 25px rgba(0,0,0,.5);
+}
+
+.next_portrait_mobi {
+
+    display: none;
+}
+
+.previous_portrait_mobi {
+
+    display: none;
+}
+
+.next_land_mobi {
+
+    display: none;
+}
+
+.previous_land_mobi {
+
+    display: none;
+}
+
+.next_portrait_desk {
+
+    display: none;
+}
+
+.previous_portrait_desk {
+
+    display: none;
+}
+
+.next_land_desk {
+
+    display: inline;
+}
+
+.next_land_desk img {
+
+    left: 87%;
+    bottom: 27px;
+    opacity: 0;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 4s;
+}
+
+.previous_land_desk {
+
+    display: inline;
+}
+
+.previous_land_desk img {
+
+    bottom: 27px;
+    right: 87%;
+    opacity: 0;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 4s;
+}
+
+.next_land_desk img:hover {
+
+    bottom: 27px;
+    left: 87%;
+    opacity: 1;
+
+    -webkit-animation-name: botaoo;
+    -webkit-animation-duration: 0.6s;
+}
+
+.previous_land_desk img:hover {
+
+    bottom: 27px;
+    right: 87%;
+    opacity: 1;
+
+    -webkit-animation-name: botaoo;
+    -webkit-animation-duration: 0.6s;
+}
+
+@-webkit-keyframes botao {
+
+    0% {opacity: 1;}
+    50% {opacity: 1;}
+    75% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@-webkit-keyframes botaoo {
+
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+label.ThreelineMobi_close {
+
+    margin-left: 96.5%;
+    font-size: 70px;
+}
+
+label.ThreelineMobi_close2 {
+
+    margin-left: 96.5%;
+    font-size: 70px;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+label.ThreelineMobi_open {
+
+    font-size: 70px;
+    margin-left: 96.5%;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+
+.NavigationMobi_open a {
+
+    font-size: 135px;
+}
+
+.NavigationMobi_close2 a {
+
+    font-size: 135px;
+}
+
+.NavigationMobi_open ul {
+
+    line-height: 280px;
+}
+
+.NavigationMobi_close2 ul {
+
+    line-height: 280px;
+}
+
+.x_entity_open {
+
+    font-size: 100px;
+    top: 1.5%;
+}
+}
+
+@media (min-height: 2500px) and (orientation: portrait) {
+
+.content {
+
+    width: 1300px;
+    height: 1570px;
+    border-radius: 65px;
+    box-shadow: 0 20px 20px rgba(0,0,0,.5);
+}
+
+p {
+
+    font-size: 56.8px;
+    margin-right: 65px;
+    margin-left: 65px;
+    line-height: 67px;
+    margin-top: 20px;
+}
+
+.pic {
+
+    padding-top: 15px;
+    width: 73%;
+    border-radius: 0px;
+}
+
+.next_land_desk {
+
+    display: none;
+}
+
+.previous_land_desk {
+
+    display: none;
+}
+
+.next_portrait_mobi {
+
+    display: none;
+}
+
+.previous_portrait_mobi {
+
+    display: none;
+}
+
+.next_land_mobi {
+
+    display: none;
+}
+
+.previous_land_mobi {
+
+    display: none;
+}
+
+.next_portrait_desk {
+
+    display: inline;
+}
+
+.next_portrait_desk img {
+
+    width: 70px;
+    left: 87%;
+    bottom: 33px;
+    opacity: 0;
+    position: absolute;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 4s;
+}
+
+.next_portrait_desk img:hover {
+
+    width: 70px;
+    left: 87%;
+    bottom: 33px;
+    opacity: 1;
+    position: absolute;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 0.6s;
+}
+
+.previous_portrait_desk {
+
+    display: inline;
+}
+
+.previous_portrait_desk img {
+
+    width: 70px;
+    bottom: 30px;
+    right: 87%;
+    opacity: 0;
+    position: absolute;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 4s;
+}
+
+.previous_portrait_desk img:hover {
+
+    width: 70px;
+    bottom: 30px;
+    right: 87%;
+    opacity: 1;
+    position: absolute;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 0.6s;
+}
+
+@-webkit-keyframes botao {
+
+    0% {opacity: 1;}
+    50% {opacity: 1;}
+    75% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@-webkit-keyframes botaoo {
+
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#menumobi_close {
+
+    display: flex;
+}
+
+label.ThreelineMobi_open {
+
+    display: none;
+}
+
+.NavigationMobi_open {
+
+    display: none;
+}
+
+label.ThreelineMobi_close {
+
+    display: none;
+}
+
+.menumobi_close {
+
+    font-size: 250px;
+    width: 850px;
+    height: 115px;
+    border-radius: 0px 0px 45px 45px;
+    box-shadow: 0 6px 16px rgba(0,0,0,.5);
+}
+
+.menumobi_close2 {
+
+    font-size: 250px;
+    width: 850px;
+    height: 115px;
+    border-radius: 0px 0px 45px 45px;
+    box-shadow: 0 6px 16px rgba(0,0,0,.5);
+
+    -webkit-animation: mobi_close_width 0.3s forwards linear;
+}
+
+@-webkit-keyframes mobi_close_width {
+
+    0% {width: 100%;height: 100%;}
+    25% {width: 75%;height: 60%;}
+    50% {width: 50%;height: 50%;}
+    75% {width: 850px;height: 25%;}
+    100% {width: 850px;height: 115px;}
+}
+
+label.arrow_down {
+
+    font-size: 140px;
+}
+
+label.arrow_up {
+
+    font-size: 140px;
+}
+
+.menumobi_open ul {
+
+    line-height: 285px;
+}
+
+.menumobi_open a {
+
+    font-size: 150px;
+}
+}
+
+@media (min-width: 3800px) and (min-height: 2140px) {
+
+.content {
+
+    width: 1825px;
+    height: 95%;
+    border-radius: 100px;
+    box-shadow: 0 35px 35px rgba(0,0,0,.5);
+}
+
+.next_portrait_mobi {
+
+    display: none;
+}
+
+.previous_portrait_mobi {
+
+    display: none;
+}
+
+.next_land_mobi {
+
+    display: none;
+}
+
+.previous_land_mobi {
+
+    display: none;
+}
+
+.next_portrait_desk {
+
+    display: none;
+}
+
+.previous_portrait_desk {
+
+    display: none;
+}
+
+.next_land_desk {
+
+    display: inline;
+}
+
+.next_land_desk img {
+
+    left: 87%;
+    bottom: 27px;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 4s;
+}
+
+.next_land_desk img:hover {
+
+    bottom: 27px;
+    left: 87%;
+
+    -webkit-animation-name: botaoo;
+    -webkit-animation-duration: 0.6s;
+}
+
+.previous_land_desk {
+
+    display: inline;
+}
+
+.previous_land_desk img {
+
+    bottom: 27px;
+    right: 87%;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 4s;
+}
+
+.previous_land_desk img:hover {
+
+    bottom: 27px;
+    right: 87%;
+
+    -webkit-animation-name: botaoo;
+    -webkit-animation-duration: 0.6s;
+}
+
+@-webkit-keyframes botao {
+
+    0% {opacity: 1;}
+    50% {opacity: 1;}
+    75% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@-webkit-keyframes botaoo {
+
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+label.ThreelineMobi_close {
+
+    margin-left: 96.5%;
+    font-size: 105px;
+}
+
+label.ThreelineMobi_close2 {
+
+    margin-left: 96.5%;
+    font-size: 105px;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+label.ThreelineMobi_open {
+
+    font-size: 105px;
+    margin-left: 96.5%;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+
+.NavigationMobi_open a {
+
+    font-size: 200px;
+}
+
+.NavigationMobi_close2 a {
+
+    font-size: 200px;
+}
+
+.NavigationMobi_open ul {
+
+    line-height: 420px;
+}
+
+.NavigationMobi_close2 ul {
+
+    line-height: 420px;
+}
+
+.x_entity_open {
+
+    color: #5B6170;
+    font-size: 150px;
+    top: 1.5%;
+}
+}
+
+@media (min-height: 3800px) and (orientation: portrait) {
+
+.content {
+
+    width: 1950px;
+    height: 2350px;
+    border-radius: 90px;
+    box-shadow: 0 65px 65px rgba(0,0,0,.5);
+}
+
+p {
+
+    font-size: 85.5px;
+    margin-right: 95px;
+    margin-left: 95px;
+    line-height: 100px;
+    margin-top: 45px;
+}
+
+.pic {
+
+    padding-top: 20px;
+    width: 73%;
+    border-radius: 0px;
+}
+
+.next_land_desk {
+
+    display: none;
+}
+
+.previous_land_desk {
+
+    display: none;
+}
+
+.next_portrait_mobi {
+
+    display: none;
+}
+
+.previous_portrait_mobi {
+
+    display: none;
+}
+
+.next_land_mobi {
+
+    display: none;
+}
+
+.previous_land_mobi {
+
+    display: none;
+}
+
+.next_portrait_desk {
+
+    display: inline;
+}
+
+.next_portrait_desk img {
+
+    width: 100px;
+    left: 87%;
+    bottom: 33px;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 4s;
+}
+
+.next_portrait_desk img:hover {
+
+    width: 100px;
+    left: 87%;
+    bottom: 33px;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 0.6s;
+}
+
+.previous_portrait_desk {
+
+    display: inline;
+}
+
+.previous_portrait_desk img {
+
+    width: 100px;
+    bottom: 30px;
+    right: 87%;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 4s;
+}
+
+.previous_portrait_desk img:hover {
+
+    width: 100px;
+    bottom: 30px;
+    right: 87%;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 0.6s;
+}
+
+@-webkit-keyframes botao {
+
+    0% {opacity: 1;}
+    50% {opacity: 1;}
+    75% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@-webkit-keyframes botaoo {
+
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#menumobi_close {
+
+    display: flex;
+}
+
+label.ThreelineMobi_open {
+
+    display: none;
+}
+
+.NavigationMobi_open {
+
+    display: none;
+}
+
+label.ThreelineMobi_close {
+
+    display: none;
+}
+
+.menumobi_close {
+
+    font-size: 250px;
+    width: 1250px;
+    height: 175px;
+    border-radius: 0px 0px 65px 65px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.5);
+}
+
+.menumobi_close2 {
+
+    font-size: 250px;
+    width: 1250px;
+    height: 175px;
+    border-radius: 0px 0px 65px 65px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.5);
+
+    -webkit-animation: mobi_close_width 0.3s forwards linear;
+}
+
+@-webkit-keyframes mobi_close_width {
+
+    0% {width: 100%;height: 100%;}
+    25% {width: 75%;height: 60%;}
+    50% {width: 50%;height: 50%;}
+    75% {width: 1250px;height: 25%;}
+    100% {width: 1250px;height: 175px;}
+}
+
+label.arrow_down {
+
+    font-size: 210px;
+}
+
+label.arrow_up {
+
+    font-size: 210px;
+}
+
+.menumobi_open ul {
+
+    line-height: 425px;
+}
+
+.menumobi_open a {
+
+    font-size: 230px;
+}
+}
+
+@media (min-width: 7680px) and (min-height: 4320px) {
+
+.content {
+
+    width: 3650px;
+    height: 95%;
+    border-radius: 200px;
+    box-shadow: 0 95px 95px rgba(0,0,0,.5);
+}
+
+.next_portrait_mobi {
+
+    display: none;
+}
+
+.previous_portrait_mobi {
+
+    display: none;
+}
+
+.next_land_mobi {
+
+    display: none;
+}
+
+.previous_land_mobi {
+
+    display: none;
+}
+
+.next_portrait_desk {
+
+    display: none;
+}
+
+.previous_portrait_desk {
+
+    display: none;
+}
+
+.next_land_desk {
+
+    display: inline;
+}
+
+.next_land_desk img {
+
+    left: 87%;
+    bottom: 27px;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 4s;
+}
+
+.next_land_desk img:hover {
+
+    bottom: 27px;
+    left: 87%;
+
+    -webkit-animation-name: botaoo;
+    -webkit-animation-duration: 0.6s;
+}
+
+.previous_land_desk {
+
+    display: inline;
+}
+
+.previous_land_desk img {
+
+    bottom: 27px;
+    right: 87%;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 4s;
+}
+
+.previous_land_desk img:hover {
+
+    bottom: 27px;
+    right: 87%;
+
+    -webkit-animation-name: botaoo;
+    -webkit-animation-duration: 0.6s;
+}
+
+@-webkit-keyframes botao {
+
+    0% {opacity: 1;}
+    50% {opacity: 1;}
+    75% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@-webkit-keyframes botaoo {
+
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+label.ThreelineMobi_close {
+
+    margin-left: 96.5%;
+    font-size: 200px;
+}
+
+label.ThreelineMobi_close2 {
+
+    margin-left: 96.5%;
+    font-size: 200px;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+label.ThreelineMobi_open {
+
+    font-size: 200px;
+    margin-left: 96.5%;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+
+.NavigationMobi_open a {
+
+    font-size: 400px;
+}
+
+.NavigationMobi_close2 a {
+
+    font-size: 400px;
+}
+
+.NavigationMobi_open ul {
+
+    line-height: 835px;
+}
+
+.NavigationMobi_close2 ul {
+
+    line-height: 835px;
+}
+
+.x_entity_open {
+
+    font-size: 300px;
+    top: 1.5%;
+}
+}
+
+@media (min-height: 4300px) and (orientation: portrait) {
+
+.content {
+
+    width: 3900px;
+    height: 4700px;
+    border-radius: 190px;
+    box-shadow: 0 85px 85px rgba(0,0,0,.5);
+}
+
+p {
+
+    text-align: left;
+    font-size: 170px;
+    margin-right: 200px;
+    margin-left: 200px;
+    line-height: 200px;
+    margin-top: 80px;
+}
+
+.pic {
+
+    padding-top: 40px;
+    width: 73%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0px;
+}
+
+.next_land_desk {
+
+    display: none;
+}
+
+.previous_land_desk {
+
+    display: none;
+}
+
+.next_portrait_mobi {
+
+    display: none;
+}
+
+.previous_portrait_mobi {
+
+    display: none;
+}
+
+.next_land_mobi {
+
+    display: none;
+}
+
+.previous_land_mobi {
+
+    display: none;
+}
+
+.next_portrait_desk {
+
+    display: inline;
+}
+
+.next_portrait_desk img {
+
+    width: 215px;
+    cursor:pointer;
+    left: 87%;
+    bottom: 33px;
+    opacity: 0;
+    position: absolute;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 4s;
+}
+
+.next_portrait_desk img:hover {
+
+    width: 215px;
+    cursor:pointer;
+    left: 87%;
+    bottom: 33px;
+    opacity: 1;
+    position: absolute;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 0.6s;
+}
+
+.previous_portrait_desk {
+
+    display: inline;
+}
+
+.previous_portrait_desk img {
+
+    width: 215px;
+    cursor:pointer;
+    bottom: 30px;
+    right: 87%;
+    opacity: 0;
+    position: absolute;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 4s;
+}
+
+.previous_portrait_desk img:hover {
+
+    width: 215px;
+    cursor:pointer;
+    bottom: 30px;
+    right: 87%;
+    opacity: 1;
+    position: absolute;
+
+    -webkit-animation-name: botao;
+    -webkit-animation-duration: 0.6s;
+}
+
+@-webkit-keyframes botao {
+
+    0% {opacity: 1;}
+    50% {opacity: 1;}
+    75% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@-webkit-keyframes botaoo {
+
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#menumobi_close {
+
+    display: flex;
+}
+
+label.ThreelineMobi_open {
+
+    display: none;
+}
+
+.NavigationMobi_open {
+
+    display: none;
+}
+
+label.ThreelineMobi_close {
+
+    display: none;
+}
+
+.menumobi_close {
+
+    font-size: 250px;
+    width: 2500px;
+    height: 348px;
+    border-radius: 0px 0px 125px 125px;
+    box-shadow: 0 20px 40px rgba(0,0,0,.5);
+}
+
+.menumobi_close2 {
+
+    font-size: 250px;
+    width: 2500px;
+    height: 348px;
+    border-radius: 0px 0px 125px 125px;
+    box-shadow: 0 20px 40px rgba(0,0,0,.5);
+
+    -webkit-animation: mobi_close_width 0.3s forwards linear;
+}
+
+@-webkit-keyframes mobi_close_width {
+
+    0% {width: 100%;height: 100%;}
+    25% {width: 75%;height: 60%;}
+    50% {width: 50%;height: 50%;}
+    75% {width: 2500px;height: 25%;}
+    100% {width: 2500px;height: 348px;}
+}
+
+label.arrow_down {
+
+    font-size: 424px;
+}
+
+label.arrow_up {
+
+    font-size: 424px;
+}
+
+.menumobi_open ul {
+
+    line-height: 845px;
+}
+
+.menumobi_open a {
+
+    font-size: 470px;
+}
+}

@@ -1,0 +1,2365 @@
+body {
+
+    background-image: url(../img/a_grande_onda.webp);
+    background-repeat: no-repeat;
+	background-position: 41% 10%;
+	background-attachment: fixed;
+	background-size: cover;
+	overflow: hidden;
+	height: 100%;
+}
+
+html {
+
+	height: 100%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+	
+    justify-content: center;
+    align-items: center;
+    display: flex;
+	width: 100vw;
+	height: 100vh;
+}
+
+.content {
+
+	background-color: white;
+	height: 610px;
+	width: 540px;
+    display: flex;
+	border-radius: 30px;
+	position: relative;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+
+h1 {
+
+    bottom: 60%;
+	font-size: 34px;
+    font-weight: 900;
+    position: absolute;
+	font-family: 'Comic Neue', cursive;
+}
+
+@-webkit-keyframes volta {
+
+	0% {opacity: 1;}
+	50% {opacity: 1;}
+	75% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+@-webkit-keyframes voltaa {
+
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.menumobi_close {
+
+    left: 0;
+    right: 0;
+    font-size: 250px;
+    width: 530px;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.menumobi_close2 {
+
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-size: 250px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    background-color: rgba(255, 255, 255, 0.9);
+
+    -webkit-animation: mobi_close_width 0.3s forwards linear;
+}
+
+@-webkit-keyframes mobi_close_width {
+
+    0% {width: 100%;height: 100%;}
+    25% {width: 75%;height: 60%;}
+    50% {width: 50%;height: 50%;}
+    75% {width: 530px;height: 25%;}
+    100% {width: 530px;height: 70px;}
+}
+
+.menumobi_open {
+
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.9);
+
+    -webkit-animation: mobi_open_height 0.4s forwards linear;
+    -webkit-animation: mobi_open_width 0.2s forwards linear;
+}
+
+@-webkit-keyframes mobi_open_height {
+
+    0% {height: 15%;}
+    25% {height: 25%;}
+    75% {height: 50%;}
+    100% {height: 60%;}
+}
+
+@-webkit-keyframes mobi_open_width {
+
+    0% {width: 25%;}
+    25% {width: 50%;}
+    75% {width: 75%;}
+    100% {width: 100%;height: 100%;}
+}
+
+label.arrow_down {
+
+    font-size: 85px;
+    position: absolute;
+    transform: rotate(270deg);
+    color: #5B6170;    
+}
+
+label.arrow_up {
+
+    font-size: 85px;
+    position: absolute;
+    transform: rotate(450deg);
+    align-self: flex-end;
+    color: #5B6170;
+    z-index: 2;
+}
+
+.menumobi_close ul {
+
+    display: none;
+}
+
+.menumobi_close2 ul {
+
+    display: none;
+}
+
+.menumobi_open ul {
+
+    list-style: none;
+    line-height: 21.5vw;
+    text-align: center;
+    align-self: center;
+    font-family: 'Baloo Da', cursive;
+}
+
+.menumobi_open a {
+
+    color: #5B6170;
+    font-size: 10.2vw;
+    text-decoration:none;
+}
+
+label.ThreelineMobi_close {
+
+    color: white;
+    margin-left: 96.5%;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+}
+
+label.ThreelineMobi_close2 {
+
+    color: white;
+    margin-left: 96.5%;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+@-webkit-keyframes Mobi_Threeline_close {
+
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    75% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+.NavigationMobi_open {
+
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.9);
+
+    -webkit-animation: mobi_land_open 0.4s forwards linear;
+}
+
+@-webkit-keyframes mobi_land_open {
+
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    75% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+.NavigationMobi_close {
+
+    display: none;
+}
+
+.NavigationMobi_close2 {
+
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.9);
+
+    -webkit-animation: mobi_land_close 0.4s forwards linear;
+}
+
+@-webkit-keyframes mobi_land_close {
+
+    0% {opacity: 1;}
+    25% {opacity: 1;}
+    75% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.NavigationMobi_open ul {
+
+    margin-top: 5%;
+    list-style: none;
+    line-height: 20vh;
+    text-align: center;
+    align-self: center;
+    font-family: 'Baloo Da', cursive;
+}
+
+.NavigationMobi_close2 ul {
+
+    margin-top: 5%;
+    list-style: none;
+    line-height: 20vh;
+    text-align: center;
+    align-self: center;
+    font-family: 'Baloo Da', cursive;
+}
+
+.NavigationMobi_close2 a {
+
+    color: #5B6170;
+    font-size: 10.2vh;
+    text-decoration:none;
+}
+
+.NavigationMobi_open a {
+
+    color: #5B6170;
+    font-size: 10.2vh;
+    text-decoration:none;
+}
+
+label.ThreelineMobi_open {
+
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 96.5%;
+    position: absolute;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+
+@-webkit-keyframes Mobi_Threeline_open {
+
+    0% {opacity: 1;}
+    25% {opacity: 1;}
+    75% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.x_entity_open {
+
+    color: #5B6170;
+    font-size: 8vh;
+    position: absolute;
+    cursor: pointer;
+    top: 1.5%;
+}
+
+@media (min-width: 576px) {
+
+.content {
+
+	width: 560px;
+	height: 96%;
+	border-radius: 30px;
+	box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+
+.previous_portrait_mobi {
+
+    display: none;
+}
+
+.previous_portrait_desk {
+
+    display: none;
+}
+
+.previous_landscape_desk {
+
+    display: none;
+}
+
+.previous_landscape_mobi img {
+
+	width: 37px;
+	cursor:pointer;
+    margin-top: 57%;
+    right: 89.5%;
+    padding-bottom: 3.8%; 
+	position: absolute;
+}
+
+h1 {
+
+    bottom: 54%;
+	font-size: 40px;
+	font-family: 'Comic Neue', cursive;
+}
+
+.facebook {
+
+    position: absolute;
+    align-self: flex-end;
+    right: 70%;
+    bottom: 12.5%;
+}
+
+.facebook:hover {
+
+    bottom: 13.1%;
+}
+
+.facebook img {
+
+    width: 64px;
+}
+
+.reddit {
+
+    position: absolute;
+    align-self: flex-end;
+    left: 70%;
+    bottom: 12.5%;
+}
+
+.reddit:hover {
+
+    bottom: 13.1%;
+}
+
+.reddit img {
+
+    width: 64px;
+}
+
+.whats {
+
+    position: absolute;
+    align-self: flex-end;
+    bottom: 11.4%;
+}
+
+.whats:hover {
+
+    bottom: 12.6%;
+}
+
+.whats img {
+
+    width: 73.5px;
+}
+
+.home {
+
+    top: 100%;
+    color: black;
+    font-size: 24px;
+    position: absolute;
+    font-family: 'Comic Neue', cursive;
+}
+
+.home:hover {
+
+    color:#f27609;
+    font-family: 'Comic Neue', cursive;
+}
+
+label.ThreelineMobi_close {
+
+    margin-left: 96.5%;
+    font-size: 33px;
+}
+
+label.ThreelineMobi_close2 {
+
+    margin-left: 96.5%;
+    font-size: 33px;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+label.ThreelineMobi_open {
+
+    font-size: 33px;
+    margin-left: 96.5%;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+
+#menumobi_close {
+
+    display: none;
+}
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+
+.content {
+
+    width: 915px;
+    height: 1060px;
+	border-radius: 40px;
+	box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+
+.previous_landscape_mobi {
+
+    display: none;
+}
+
+.previous_landscape_desk {
+
+    display: none;
+}
+
+.previous_portrait_desk {
+
+    display: none;
+}
+
+.previous_portrait_mobi {
+
+    display: inline;
+}
+
+.previous_portrait_mobi img {
+
+    right: 89%;
+    opacity: 0;
+    width: 52px;
+	bottom: 5px;
+    cursor:pointer;
+    margin-top: 57%;
+    padding-bottom: 3%;
+	position: absolute;
+
+    -webkit-animation-name: volta;
+    -webkit-animation-duration: 6s;
+}
+
+.previous_portrait img:hover {
+
+	right: 89%;
+    opacity: 1;
+    width: 52px;
+    bottom: 5px;
+    cursor:pointer;
+    margin-top: 57%;
+    padding-bottom: 3%;
+    position: absolute;
+
+    -webkit-animation-name: voltaa;
+    -webkit-animation-duration: 0.6s;
+}
+
+h1 {
+
+	bottom: 57%;
+    font-size: 68px;
+	font-family: 'Comic Neue', cursive;
+}
+
+.facebook {
+
+    position: absolute;
+    align-self: flex-end;
+    right: 71%;
+    bottom: 21%;
+}
+
+.facebook:hover {
+
+    bottom: 21.6%;
+}
+
+.facebook img {
+
+    width: 100px;
+}
+
+.reddit {
+
+    position: absolute;
+    align-self: flex-end;
+    left: 71%;
+    bottom: 21%;
+}
+
+.reddit:hover {
+
+    bottom: 21.6%;
+}
+
+.reddit img {
+
+    width: 100px;
+}
+
+.whats {
+
+    position: absolute;
+    align-self: flex-end;
+    bottom: 20.25%;
+}
+
+.whats:hover {
+
+    bottom: 20.95%;
+}
+
+.whats img {
+
+    width: 115px;
+}
+
+.home {
+    
+    top: 88.5%;
+    color: black;
+    font-size: 31px;
+    position: absolute;
+    font-family: 'Comic Neue', cursive;
+}
+
+#menumobi_close {
+
+    display: flex;
+}
+
+label.ThreelineMobi_open {
+
+    display: none;
+}
+
+.NavigationMobi_open {
+
+    display: none;
+}
+
+label.ThreelineMobi_close {
+
+    display: none;
+}
+}
+
+@media (min-width: 992px) {
+
+.content {
+
+    width: 835px;
+    height: 965px;
+	border-radius: 30px;
+	box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+
+.previous_portrait_desk {
+
+    display: none;
+}
+
+.previous_landscape_desk {
+
+    display: none;
+}
+
+.previous_landscape_mobi {
+
+    display: none;
+}
+
+.previous_portrait_mobi {
+
+    display: inline;
+}
+
+.previous_portrait_mobi img {
+
+    right: 87%;
+    opacity: 0;
+    width: 48px;
+    cursor:pointer;
+    position: absolute;
+    padding-bottom: 3%;
+
+    -webkit-animation-name: volta;
+    -webkit-animation-duration: 6s;
+}
+
+.previous_portrait_mobi img:hover {
+
+    right: 87%;
+    opacity: 1;
+    width: 48px;
+    cursor:pointer;
+    position: absolute;
+    padding-bottom: 3%; 
+
+    -webkit-animation-name: voltaa;
+    -webkit-animation-duration: 0.6s;
+}
+
+h1 {
+
+    bottom: 60%;
+    font-size: 62px;
+    font-family: 'Comic Neue', cursive;
+}
+
+.facebook {
+
+    position: absolute;
+    align-self: flex-end;
+    right: 71%;
+    bottom: 21%;
+}
+
+.facebook:hover {
+
+    bottom: 21.6%;
+}
+
+.facebook img {
+
+    width: 96px;
+}
+
+.reddit {
+
+    position: absolute;
+    align-self: flex-end;
+    left: 71%;
+    bottom: 21%;
+}
+
+.reddit:hover {
+
+    bottom: 21.6%;
+}
+
+.reddit img {
+
+    width: 96px;
+}
+
+.whats {
+
+    position: absolute;
+    align-self: flex-end;
+    bottom: 20.25%;
+}
+
+.whats:hover {
+
+    bottom: 20.95%;
+}
+
+.whats img {
+
+    width: 109px;
+}
+
+.home {
+
+    top: 91%;
+    color: black;
+    font-size: 29px;
+    position: absolute;
+    font-family: 'Comic Neue', cursive;
+}
+}
+
+@media (min-width: 992px) and (orientation: landscape) {
+
+.content {
+
+    height: 88.5%;
+    width: 610px;
+    border-radius: 30px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+
+.previous_portrait_mobi {
+
+    display: none;
+}
+
+.previous_portrait_desk {
+
+    display: none;
+}
+
+.previous_landscape_desk {
+
+    display: none;
+}
+
+.previous_landscape_mobi {
+
+    display: inline;
+}
+
+.previous_landscape_mobi img {
+
+    width: 37px;
+    cursor:pointer;
+    margin-top: 57%;
+    right: 89.5%;
+    padding-bottom: 3.8%; 
+    position: absolute;
+}
+
+h1 {
+
+    bottom: 52%;
+    font-size: 42px;
+    font-family: 'Comic Neue', cursive;
+}
+
+.facebook {
+
+    position: absolute;
+    align-self: flex-end;
+    right: 70%;
+    bottom: 12.5%;
+}
+
+.facebook:hover {
+
+    bottom: 13.1%;
+}
+
+.facebook img {
+
+    width: 60px;
+}
+
+.reddit {
+
+    position: absolute;
+    align-self: flex-end;
+    left: 70%;
+    bottom: 12.5%;
+}
+
+.reddit:hover {
+
+    bottom: 13.1%;
+}
+
+.reddit img {
+
+    width: 60px;
+}
+
+.whats {
+
+    position: absolute;
+    align-self: flex-end;
+    bottom: 11.8%;
+}
+
+.whats:hover {
+
+    bottom: 12.6%;
+}
+
+.whats img {
+
+    width: 68px;
+}
+
+.home {
+
+    top: 99%;
+    color: black;
+    font-size: 24px;
+    position: absolute;
+    font-family: 'Comic Neue', cursive;
+}
+
+.home:hover {
+
+    color:#f27609;
+    font-family: 'Comic Neue', cursive;
+}
+
+label.ThreelineMobi_close {
+
+    margin-left: 95.5%;
+    font-size: 34px;
+}
+
+label.ThreelineMobi_close2 {
+
+    margin-left: 95.5%;
+    font-size: 34px;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+label.ThreelineMobi_open {
+
+    font-size: 34px;
+    margin-left: 95.5%;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+}
+
+@media (min-width: 992px) and (height: 600px) {
+
+.content {
+
+	width: 560px;
+	height: 96%;
+	border-radius: 30px;
+	box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+
+.previous_portrait_mobi {
+
+    display: none;
+}
+
+.previous_landscape_desk {
+
+    display: none;
+}
+
+.previous_portrait_desk {
+
+    display: none;
+}
+
+.previous_landscape_mobi {
+
+    display: inline;
+}
+
+.previous_landscape_mobi img {
+
+    width: 37px;
+    cursor:pointer;
+    margin-top: 57%;
+    right: 89.5%;
+    padding-bottom: 3.8%; 
+    position: absolute;
+}
+
+h1 {
+
+    bottom: 52%;
+    font-size: 40px;
+    font-family: 'Comic Neue', cursive;
+}
+
+.facebook {
+
+    position: absolute;
+    align-self: flex-end;
+    right: 70%;
+    bottom: 12.5%;
+}
+
+.facebook:hover {
+
+    bottom: 13.1%;
+}
+
+.facebook img {
+
+    width: 58px;
+}
+
+.reddit {
+
+    position: absolute;
+    align-self: flex-end;
+    left: 70%;
+    bottom: 12.5%;
+}
+
+.reddit:hover {
+
+    bottom: 13.1%;
+}
+
+.reddit img {
+
+    width: 58px;
+}
+
+.whats {
+
+    position: absolute;
+    align-self: flex-end;
+    bottom: 11.4%;
+}
+
+.whats:hover {
+
+    bottom: 12.6%;
+}
+
+.whats img {
+
+    width: 66px;
+}
+
+.home {
+
+    top: 100%;
+    color: black;
+    font-size: 24px;
+    position: absolute;
+    font-family: 'Comic Neue', cursive;
+}
+
+.home:hover {
+
+    color:#f27609;
+    font-family: 'Comic Neue', cursive;
+}
+
+label.ThreelineMobi_close {
+
+    margin-left: 96.5%;
+    font-size: 29.5px;
+}
+
+label.ThreelineMobi_close2 {
+
+    margin-left: 96.5%;
+    font-size: 29.5px;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+label.ThreelineMobi_open {
+
+    font-size: 29.5px;
+    margin-left: 96.5%;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+}
+
+@media (min-width: 1200px) {
+
+.content {
+
+	width: 540px;
+	height: 92.5%;
+	border-radius: 30px;
+	box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+
+.previous_portrait_mobi {
+
+    display: none;
+}
+
+.previous_portrait_desk {
+
+    display: none;
+}
+
+.previous_landscape_desk {
+
+    display: none;
+}
+
+.previous_landscape_mobi {
+
+    display: inline;
+}
+
+.previous_landscape_mobi img {
+
+    width: 32.7px;
+    opacity: 0;
+    right: 87%;
+    cursor:pointer;
+    margin-top: 46%;
+    padding-bottom: 0; 
+    position: absolute;
+
+    -webkit-animation-name: volta;
+    -webkit-animation-duration: 4s;
+}
+
+.previous_landscape_mobi img:hover {
+
+    opacity: 1;
+
+    -webkit-animation-name: voltaa;
+    -webkit-animation-duration: 0.6s;
+}
+
+h1 {
+
+	bottom: 60%;
+    font-size: 38px;
+	font-family: 'Comic Neue', cursive;
+}
+
+.facebook {
+
+    position: absolute;
+    align-self: flex-end;
+    right: 71%;
+    bottom: 21%;
+}
+
+.facebook:hover {
+
+    bottom: 21.6%;
+}
+
+.facebook img {
+
+    width: 57px;
+}
+
+.reddit {
+
+    position: absolute;
+    align-self: flex-end;
+    left: 71%;
+    bottom: 21%;
+}
+
+.reddit:hover {
+
+    bottom: 21.6%;
+}
+
+.reddit img {
+
+    width: 57px;
+}
+
+.whats {
+
+    position: absolute;
+    align-self: flex-end;
+    bottom: 20.25%;
+}
+
+.whats:hover {
+
+    bottom: 20.95%;
+}
+
+.whats img {
+
+    width: 65px;
+}
+
+.home {
+
+    top: 91%;
+    color: black;
+    font-size: 18px;
+    position: absolute;
+    font-family: 'Comic Neue', cursive;
+}
+
+label.ThreelineMobi_close {
+
+    margin-left: 97%;
+    font-size: 27px;
+}
+
+label.ThreelineMobi_close2 {
+
+    margin-left: 97%;
+    font-size: 27px;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+label.ThreelineMobi_open {
+
+    font-size: 27px;
+    margin-left: 97%;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+}
+
+@media (min-width: 1200px) and (min-height: 750px) {
+
+.content {
+
+	width: 680px;
+	height: 95%;
+	border-radius: 30px;
+	box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+
+.previous_portrait_mobi {
+
+    display: none;
+}
+
+.previous_landscape_desk {
+
+    display: none;
+}
+
+.previous_portrait_desk {
+
+    display: none;
+}
+
+.previous_landscape_mobi {
+
+    display: inline;
+}
+
+.previous_landscape_mobi img {
+
+    width: 40px;
+    opacity: 0;
+    cursor:pointer;
+    margin-top: 47%;
+    right: 89.5%;
+    padding-bottom: 0; 
+    position: absolute;
+
+    -webkit-animation-name: volta;
+    -webkit-animation-duration: 4s;
+}
+
+.previous_landscape_mobi img:hover {
+
+    opacity: 1;
+
+    -webkit-animation-name: voltaa;
+    -webkit-animation-duration: 0.6s;
+}
+
+h1 {
+
+	font-size: 46px;
+	font-family: 'Comic Neue', cursive;
+}
+
+label.ThreelineMobi_close {
+
+    margin-left: 96.5%;
+    font-size: 36.5px;
+}
+
+label.ThreelineMobi_close2 {
+
+    margin-left: 96.5%;
+    font-size: 36.5px;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+label.ThreelineMobi_open {
+
+    font-size: 36.5px;
+    margin-left: 96.5%;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+
+.facebook {
+
+    position: absolute;
+    align-self: flex-end;
+    right: 70%;
+}
+
+.facebook img {
+
+    width: 75px;
+}
+
+.reddit {
+
+    position: absolute;
+    align-self: flex-end;
+    left: 70%;
+}
+
+.reddit img {
+
+    width: 75px;
+}
+
+.whats {
+
+    position: absolute;
+    align-self: flex-end;
+    bottom: 20%;
+}
+
+.whats img {
+
+    width: 87px;
+}
+
+.home {
+
+    top: 88%;
+    color: black;
+    font-size: 22px;
+    position: absolute;
+    font-family: 'Comic Neue', cursive;
+}
+
+.home:hover {
+
+    color:#f27609;
+    font-family: 'Comic Neue', cursive;
+}
+}
+
+@media (min-width: 1200px) and (min-height: 850px) {
+
+.content {
+
+    width: 875px;
+    height: 95%;
+    border-radius: 30px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+
+.previous_portrait_mobi {
+
+    display: none;
+}
+
+.previous_landscape_mobi {
+
+    display: none;
+}
+
+.previous_portrait_desk {
+
+    display: none;
+}
+
+.previous_landscape_desk {
+
+    display: inline;
+}
+
+.previous_landscape_desk img {
+
+    width: 50px;
+    opacity: 0;
+    cursor:pointer;
+    margin-top: 47%;
+    right: 89.5%;
+    padding-bottom: 20px; 
+    position: absolute;
+
+    -webkit-animation-name: volta;
+    -webkit-animation-duration: 4s;
+}
+
+.previous_landscape img:hover {
+
+    opacity: 1;
+
+    -webkit-animation-name: voltaa;
+    -webkit-animation-duration: 0.6s;
+}
+
+h1 {
+
+    font-size: 64px;
+    font-family: 'Comic Neue', cursive;
+}
+
+label.ThreelineMobi_close {
+
+    margin-left: 96.5%;
+    font-size: 45px;
+}
+
+label.ThreelineMobi_close2 {
+
+    margin-left: 96.5%;
+    font-size: 45px;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+label.ThreelineMobi_open {
+
+    font-size: 45px;
+    margin-left: 96.5%;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+
+.facebook {
+
+    position: absolute;
+    align-self: flex-end;
+    right: 70%;
+}
+
+.facebook img {
+
+    width: 95px;
+}
+
+.reddit {
+
+    position: absolute;
+    align-self: flex-end;
+    left: 70%;
+}
+
+.reddit img {
+
+    width: 95px;
+}
+
+.whats {
+
+    position: absolute;
+    align-self: flex-end;
+}
+
+.whats img {
+
+    width: 109px;
+}
+
+.home {
+
+    top: 91.5%;
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    font-family: 'Comic Neue', cursive;
+}
+
+.home:hover {
+
+    color:#f27609;
+    font-family: 'Comic Neue', cursive;
+}
+}
+
+@media (min-width: 2500px) and (min-height: 1400px) {
+
+.content {
+
+    width: 1225px;
+    height: 95%;
+    border-radius: 70px;
+    box-shadow: 0 25px 25px rgba(0,0,0,.5);
+}
+
+.previous_portrait_mobi {
+
+    display: none;
+}
+
+.previous_landscape_mobi {
+
+    display: none;
+}
+
+.previous_portrait_desk {
+
+    display: none;
+}
+
+.previous_landscape_desk {
+
+    display: inline;
+}
+
+.previous_landscape_desk img {
+
+    width: 60px;
+    opacity: 0;
+    margin-top: 47%;
+    right: 89.5%;
+    padding-bottom: 3.8%; 
+
+    -webkit-animation-name: volta;
+    -webkit-animation-duration: 4s;
+}
+
+.previous_landscape img:hover {
+
+    opacity: 1;
+
+    -webkit-animation-name: voltaa;
+    -webkit-animation-duration: 0.6s;
+}
+
+h1 {
+
+    font-size: 84px;
+}
+
+.facebook {
+
+    position: absolute;
+    align-self: flex-end;
+    right: 70%;
+}
+
+.facebook img {
+
+    width: 126px;
+}
+
+.reddit {
+
+    position: absolute;
+    align-self: flex-end;
+    left: 70%;
+}
+
+.reddit img {
+
+    width: 126px;
+}
+
+.whats {
+
+    position: absolute;
+    align-self: flex-end;
+}
+
+.whats img {
+
+    width: 146px;
+}
+
+.home {
+
+    top: 42.8%;
+    color: black;
+    font-size: 40px;
+}
+
+.home:hover {
+
+    color:#f27609;
+    font-family: 'Comic Neue', cursive;
+}
+
+label.ThreelineMobi_close {
+
+    margin-left: 96.5%;
+    font-size: 65px;
+}
+
+label.ThreelineMobi_close2 {
+
+    margin-left: 96.5%;
+    font-size: 65px;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+label.ThreelineMobi_open {
+
+    font-size: 65px;
+    margin-left: 96.5%;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+
+.NavigationMobi_open a {
+
+    font-size: 135px;
+}
+
+.NavigationMobi_close2 a {
+
+    font-size: 135px;
+}
+
+.NavigationMobi_open ul {
+
+    line-height: 280px;
+}
+
+.NavigationMobi_close2 ul {
+
+    line-height: 280px;
+}
+
+.x_entity_open {
+
+    font-size: 100px;
+    top: 1.5%;
+}
+}
+
+@media (min-height: 2500px) and (orientation: portrait) {
+
+.content {
+
+    width: 1300px;
+    height: 1570px;
+    border-radius: 65px;
+    box-shadow: 0 20px 20px rgba(0,0,0,.5);
+}
+
+.previous_portrait_mobi {
+
+    display: none;
+}
+
+.previous_landscape_mobi {
+
+    display: none;
+}
+
+.previous_landscape_desk {
+
+    display: none;
+}
+
+.previous_portrait_desk {
+
+    display: inline;
+}
+
+.previous_portrait_desk img {
+
+    right: 87%;
+    opacity: 0;
+    width: 78px;
+    bottom: 30px;
+    padding-bottom: 3%;
+
+    -webkit-animation-name: volta;
+    -webkit-animation-duration: 4s;
+}
+
+.previous_portrait_desk img:hover {
+
+    right: 87%;
+    opacity: 1;
+    width: 78px;
+    bottom: 30px;
+    padding-bottom: 3%;
+
+    -webkit-animation-name: voltaa;
+    -webkit-animation-duration: 0.6s;
+}
+
+h1 {
+
+    bottom: 60%;
+    font-size: 83px;
+}
+
+.facebook {
+
+    right: 71%;
+    bottom: 21%;
+}
+
+.facebook:hover {
+
+    bottom: 21.6%;
+}
+
+.facebook img {
+
+    width: 130px;
+}
+
+.reddit {
+
+    left: 71%;
+    bottom: 21%;
+}
+
+.reddit:hover {
+
+    bottom: 21.6%;
+}
+
+.reddit img {
+
+    width: 130px;
+}
+
+.whats {
+
+    bottom: 20.25%;
+}
+
+.whats:hover {
+
+    bottom: 20.95%;
+}
+
+.whats img {
+
+    width: 155px;
+}
+
+.home {
+    
+    top: 42.8%;
+    font-size: 42px;
+}
+
+.menumobi_close {
+
+    font-size: 250px;
+    width: 850px;
+    height: 115px;
+    border-radius: 0px 0px 45px 45px;
+}
+
+.menumobi_close2 {
+
+    font-size: 250px;
+    width: 850px;
+    height: 115px;
+    border-radius: 0px 0px 45px 45px;
+
+    -webkit-animation: mobi_close_width 0.3s forwards linear;
+}
+
+@-webkit-keyframes mobi_close_width {
+
+    0% {width: 100%;height: 100%;}
+    25% {width: 75%;height: 60%;}
+    50% {width: 50%;height: 50%;}
+    75% {width: 850px;height: 25%;}
+    100% {width: 850px;height: 115px;}
+}
+
+label.arrow_down {
+
+    font-size: 140px;
+}
+
+label.arrow_up {
+
+    font-size: 140px;
+}
+
+.menumobi_open ul {
+
+    line-height: 285px;
+}
+
+.menumobi_open a {
+
+    font-size: 150px;
+}
+}
+
+@media (min-width: 3800px) and (min-height: 2140px) {
+
+.content {
+
+    width: 1825px;
+    height: 95%;
+    border-radius: 100px;
+    box-shadow: 0 35px 35px rgba(0,0,0,.5);
+}
+
+.previous_portrait_mobi {
+
+    display: none;
+}
+
+.previous_landscape_mobi {
+
+    display: none;
+}
+
+.previous_portrait_desk {
+
+    display: none;
+}
+
+.previous_landscape_desk {
+
+    display: inline;
+}
+
+.previous_landscape_desk img {
+
+    width: 100px;
+    opacity: 0;
+    margin-top: 47%;
+    right: 89.5%;
+    padding-bottom: 3.8%; 
+
+    -webkit-animation-name: volta;
+    -webkit-animation-duration: 4s;
+}
+
+.previous_landscape_desk img:hover {
+
+    opacity: 1;
+
+    -webkit-animation-name: voltaa;
+    -webkit-animation-duration: 0.6s;
+}
+
+h1 {
+
+    font-size: 120px;
+}
+
+.facebook {
+
+    right: 70%;    
+}
+
+.facebook img {
+
+    width: 186px;
+}
+
+.reddit {
+
+    left: 70%;
+}
+
+.reddit img {
+
+    width: 186px;
+}
+
+.whats {
+
+    position: absolute;
+    align-self: flex-end;
+}
+
+.whats img {
+
+    width: 215px;
+}
+
+.home {
+
+    top: 42.8%;
+    font-size: 60px;
+}
+
+.home:hover {
+
+    color:#f27609;
+    font-family: 'Comic Neue', cursive;
+}
+
+label.ThreelineMobi_close {
+
+    margin-left: 96.5%;
+    font-size: 95px;
+}
+
+label.ThreelineMobi_close2 {
+
+    margin-left: 96.5%;
+    font-size: 95px;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+label.ThreelineMobi_open {
+
+    font-size: 95px;
+    margin-left: 96.5%;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+
+.NavigationMobi_open a {
+
+    font-size: 200px;
+}
+
+.NavigationMobi_close2 a {
+
+    font-size: 200px;
+}
+
+.NavigationMobi_open ul {
+
+    line-height: 420px;
+}
+
+.NavigationMobi_close2 ul {
+
+    line-height: 420px;
+}
+
+.x_entity_open {
+
+    font-size: 150px;
+    top: 1.5%;
+}
+}
+
+@media (min-height: 3800px) and (orientation: portrait) {
+
+.content {
+
+    width: 1950px;
+    height: 2350px;
+    border-radius: 90px;
+    box-shadow: 0 65px 65px rgba(0,0,0,.5);
+}
+
+.previous_portrait_mobi {
+
+    display: none;
+}
+
+.previous_landscape_mobi {
+
+    display: none;
+}
+
+.previous_landscape_desk {
+
+    display: none;
+}
+
+.previous_portrait_desk {
+
+    display: inline;
+}
+
+.previous_portrait_desk img {
+
+    right: 87%;
+    opacity: 0;
+    width: 110px;
+    bottom: 30px;
+    padding-bottom: 3%;
+
+    -webkit-animation-name: volta;
+    -webkit-animation-duration: 4s;
+}
+
+.previous_portrait_desk img:hover {
+
+    right: 87%;
+    opacity: 1;
+    width: 110px;
+    bottom: 30px;
+    padding-bottom: 3%;
+
+    -webkit-animation-name: voltaa;
+    -webkit-animation-duration: 0.6s;
+}
+
+h1 {
+
+    bottom: 60%;
+    font-size: 125px;
+}
+
+.facebook {
+
+    right: 71%;
+    bottom: 21%;
+}
+
+.facebook:hover {
+
+    bottom: 21.6%;
+}
+
+.facebook img {
+
+    width: 210px;
+}
+
+.reddit {
+
+    left: 71%;
+    bottom: 21%;
+}
+
+.reddit:hover {
+
+    bottom: 21.6%;
+}
+
+.reddit img {
+
+    width: 210px;
+}
+
+.whats {
+
+    bottom: 20.25%;
+}
+
+.whats:hover {
+
+    bottom: 20.95%;
+}
+
+.whats img {
+
+    width: 245px;
+}
+
+.home {
+    
+    top: 42.8%;
+    font-size: 60px;
+}
+
+.menumobi_close {
+
+    font-size: 250px;
+    width: 1250px;
+    height: 175px;
+    border-radius: 0px 0px 60px 60px;
+}
+
+.menumobi_close2 {
+
+    font-size: 250px;
+    width: 1250px;
+    height: 175px;
+    border-radius: 0px 0px 60px 60px;
+
+    -webkit-animation: mobi_close_width 0.3s forwards linear;
+}
+
+@-webkit-keyframes mobi_close_width {
+
+    0% {width: 100%;height: 100%;}
+    25% {width: 75%;height: 60%;}
+    50% {width: 50%;height: 50%;}
+    75% {width: 1250px;height: 25%;}
+    100% {width: 1250px;height: 175px;}
+}
+
+label.arrow_down {
+
+    font-size: 210px;
+}
+
+label.arrow_up {
+
+    font-size: 210px;
+}
+
+.menumobi_open ul {
+
+    line-height: 425px;
+}
+
+.menumobi_open a {
+
+    font-size: 230px;
+}
+}
+
+@media (min-width: 7680px) and (min-height: 4320px) {
+
+.content {
+
+    width: 3650px;
+    height: 95%;
+    border-radius: 200px;
+    box-shadow: 0 95px 95px rgba(0,0,0,.5);
+}
+
+.previous_portrait_mobi {
+
+    display: none;
+}
+
+.previous_landscape_mobi {
+
+    display: none;
+}
+
+.previous_portrait_desk {
+
+    display: none;
+}
+
+.previous_landscape_desk {
+
+    display: inline;
+}
+
+.previous_landscape_desk img {
+
+    width: 200px;
+    opacity: 0;
+    margin-top: 47%;
+    right: 89.5%;
+    padding-bottom: 3.8%; 
+
+    -webkit-animation-name: volta;
+    -webkit-animation-duration: 4s;
+}
+
+.previous_landscape_desk img:hover {
+
+    opacity: 1;
+
+    -webkit-animation-name: voltaa;
+    -webkit-animation-duration: 0.6s;
+}
+
+h1 {
+
+    font-size: 265px;
+}
+
+.facebook {
+
+    position: absolute;
+    align-self: flex-end;
+    right: 70%;   
+}
+
+.facebook img {
+
+    width: 380px;
+}
+
+.reddit {
+
+    position: absolute;
+    align-self: flex-end;
+    left: 70%;
+}
+
+.reddit img {
+
+    width: 380px;
+}
+
+.whats {
+
+    position: absolute;
+    align-self: flex-end;
+}
+
+.whats img {
+
+    width: 435px;
+}
+
+.home {
+
+    top: 42.8%;
+    font-size: 128px;
+}
+
+.home:hover {
+
+    color:#f27609;
+    font-family: 'Comic Neue', cursive;
+}
+
+label.ThreelineMobi_close {
+
+    margin-left: 96.5%;
+    font-size: 200px;
+}
+
+label.ThreelineMobi_close2 {
+
+    margin-left: 96.5%;
+    font-size: 200px;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+label.ThreelineMobi_open {
+
+    font-size: 200px;
+    margin-left: 96.5%;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+
+.NavigationMobi_open a {
+
+    font-size: 400px;
+}
+
+.NavigationMobi_close2 a {
+
+    font-size: 400px;
+}
+
+.NavigationMobi_open ul {
+
+    line-height: 835px;
+}
+
+.NavigationMobi_close2 ul {
+
+    line-height: 835px;
+}
+
+.x_entity_open {
+
+    font-size: 300px;
+    top: 1.5%;
+}
+}
+
+@media (min-height: 4300px) and (orientation: portrait) {
+
+.content {
+
+    width: 3900px;
+    height: 4700px;
+    border-radius: 190px;
+    box-shadow: 0 85px 85px rgba(0,0,0,.5);
+}
+
+.previous_portrait_mobi {
+
+    display: none;
+}
+
+.previous_landscape_mobi {
+
+    display: none;
+}
+
+.previous_landscape_desk {
+
+    display: none;
+}
+
+.previous_portrait_desk {
+
+    display: inline;
+}
+
+.previous_portrait_desk img {
+
+    right: 87%;
+    opacity: 0;
+    width: 215px;
+    bottom: 30px;
+    padding-bottom: 3%;
+
+    -webkit-animation-name: volta;
+    -webkit-animation-duration: 4s;
+}
+
+.previous_portrait_desk img:hover {
+
+    right: 87%;
+    opacity: 1;
+    width: 215px;
+    bottom: 30px;
+    padding-bottom: 3%;
+
+    -webkit-animation-name: voltaa;
+    -webkit-animation-duration: 0.6s;
+}
+
+h1 {
+
+    bottom: 60%;
+    font-size: 230px;
+}
+
+.facebook {
+
+    right: 71%;
+    bottom: 21%;
+}
+
+.facebook:hover {
+
+    bottom: 21.6%;
+}
+
+.facebook img {
+
+    width: 420px;
+}
+
+.reddit {
+
+    left: 71%;
+    bottom: 21%;
+}
+
+.reddit:hover {
+
+    bottom: 21.6%;
+}
+
+.reddit img {
+
+    width: 420px;
+}
+
+.whats {
+
+    position: absolute;
+    align-self: flex-end;
+    bottom: 20.25%;
+}
+
+.whats:hover {
+
+    bottom: 20.95%;
+}
+
+.whats img {
+
+    width: 495px;
+}
+
+.home {
+    
+    top: 42.8%;
+    font-size: 120px;
+}
+
+.menumobi_close {
+
+    font-size: 250px;
+    width: 2500px;
+    height: 348px;
+    border-radius: 0px 0px 115px 115px;
+}
+
+.menumobi_close2 {
+
+    font-size: 250px;
+    width: 2500px;
+    height: 348px;
+    border-radius: 0px 0px 60px 60px;
+
+    -webkit-animation: mobi_close_width 0.3s forwards linear;
+}
+
+@-webkit-keyframes mobi_close_width {
+
+    0% {width: 100%;height: 100%;}
+    25% {width: 75%;height: 60%;}
+    50% {width: 50%;height: 50%;}
+    75% {width: 1250px;height: 25%;}
+    100% {width: 1250px;height: 175px;}
+}
+
+label.arrow_down {
+
+    font-size: 424px;
+}
+
+label.arrow_up {
+
+    font-size: 424px;
+}
+
+.menumobi_open ul {
+
+    line-height: 845px;
+}
+
+.menumobi_open a {
+
+    font-size: 470px;
+}
+}

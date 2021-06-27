@@ -1,0 +1,363 @@
+body {
+
+    background-image: url(../img/a_grande_onda.webp);
+    background-repeat: no-repeat;
+    background-position: 41% 10%;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    height: 100%;
+}
+
+html {
+
+	height: 100%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+
+	width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+
+	width: 560px;
+	height: 660px;
+    position: relative;
+	border-radius: 30px;
+    background-color: white;
+	box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+
+.menumobi_close {
+
+    left: 0;
+    right: 0;
+    font-size: 250px;
+    width: 530px;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.menumobi_close2 {
+
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-size: 250px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    background-color: rgba(255, 255, 255, 0.9);
+
+    -webkit-animation: mobi_close_width 0.3s forwards linear;
+}
+
+@-webkit-keyframes mobi_close_width {
+
+    0% {width: 100%;height: 100%;}
+    25% {width: 75%;height: 60%;}
+    50% {width: 50%;height: 50%;}
+    75% {width: 530px;height: 25%;}
+    100% {width: 530px;height: 70px;}
+}
+
+.menumobi_open {
+
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 60%;
+    margin: auto;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+
+    -webkit-animation: mobi_open_height 0.4s forwards linear;
+    -webkit-animation: mobi_open_width 0.2s forwards linear;
+}
+
+@-webkit-keyframes mobi_open_height {
+
+    0% {height: 15%;}
+    25% {height: 25%;}
+    75% {height: 50%;}
+    100% {height: 60%;}
+}
+
+@-webkit-keyframes mobi_open_width {
+
+    0% {width: 25%;}
+    25% {width: 50%;}
+    75% {width: 75%;}
+    100% {width: 100%;height: 100%;}
+}
+
+label.arrow_down {
+
+    font-size: 85px;
+    position: absolute;
+    transform: rotate(270deg);
+    color: #5B6170;    
+}
+
+label.arrow_up {
+
+    font-size: 85px;
+    position: absolute;
+    transform: rotate(450deg);
+    align-self: flex-end;
+    color: #5B6170;
+    z-index: 2;
+}
+
+.menumobi_close ul {
+
+    display: none;
+}
+
+.menumobi_close2 ul {
+
+    display: none;
+}
+
+.menumobi_open ul {
+
+    list-style: none;
+    line-height: 21.5vw;
+    text-align: center;
+    align-self: center;
+    font-family: 'Baloo Da', cursive;
+}
+
+.menumobi_open a {
+
+    color: #5B6170;
+    font-size: 10.2vw;
+    text-decoration:none;
+}
+
+label.ThreelineMobi_close {
+
+    color: white;
+    margin-left: 96.5%;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+}
+
+label.ThreelineMobi_close2 {
+
+    color: white;
+    margin-left: 96.5%;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    
+    -webkit-animation: Mobi_Threeline_close 0.4s forwards linear;
+}
+
+@-webkit-keyframes Mobi_Threeline_close {
+
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    75% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+.NavigationMobi_open {
+
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+
+    -webkit-animation: mobi_land_open 0.4s forwards linear;
+}
+
+@-webkit-keyframes mobi_land_open {
+
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    75% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+.NavigationMobi_close {
+
+    display: none;
+}
+
+.NavigationMobi_close2 {
+
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+
+    -webkit-animation: mobi_land_close 0.4s forwards linear;
+}
+
+@-webkit-keyframes mobi_land_close {
+
+    0% {opacity: 1;}
+    25% {opacity: 1;}
+    75% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.NavigationMobi_open ul {
+
+    margin-top: 5%;
+    list-style: none;
+    line-height: 20vh;
+    text-align: center;
+    align-self: center;
+    font-family: 'Baloo Da', cursive;
+}
+
+.NavigationMobi_close2 ul {
+
+    margin-top: 5%;
+    list-style: none;
+    line-height: 20vh;
+    text-align: center;
+    align-self: center;
+    font-family: 'Baloo Da', cursive;
+}
+
+.NavigationMobi_close2 a {
+
+    color: #5B6170;
+    font-size: 10.2vh;
+    text-decoration:none;
+}
+
+.NavigationMobi_open a {
+
+    color: #5B6170;
+    font-size: 10.2vh;
+    text-decoration:none;
+}
+
+label.ThreelineMobi_open {
+
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 96.5%;
+    position: absolute;
+    
+    -webkit-animation: Mobi_Threeline_open 0.4s forwards linear;
+}
+
+@-webkit-keyframes Mobi_Threeline_open {
+
+    0% {opacity: 1;}
+    25% {opacity: 1;}
+    75% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.x_entity_open {
+
+    color: #5B6170;
+    font-size: 8vh;
+    position: absolute;
+    cursor: pointer;
+    top: 1.5%;
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 992px) and (orientation: landscape) {
+
+}
+
+@media (min-width: 992px) and (height: 600px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1200px) and (min-height: 750px) {
+
+}
+
+@media (min-width: 1200px) and (min-height: 850px) {
+
+}
+
+@media (min-width: 2500px) and (min-height: 1400px) {
+
+}
+
+@media (min-height: 2500px) and (orientation: portrait) {
+
+}
+
+@media (min-width: 3800px) and (min-height: 2140px) {
+
+}
+
+@media (min-height: 3800px) and (orientation: portrait) {
+
+}
+
+@media (min-width: 7680px) and (min-height: 4320px) {
+
+}
+
+@media (min-height: 4300px) and (orientation: portrait) {
+
+}
