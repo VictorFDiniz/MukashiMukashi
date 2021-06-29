@@ -4,8 +4,8 @@ function sleep(ms) {
 
 function openNavMobi_Portrait() {
 
-	var x = document.getElementById("menumobi_close");
-	var y = document.getElementById("arrow_down")
+	let x = document.getElementById("menumobi_close");
+	let y = document.getElementById("arrow_down")
 
 
 	if (x.className === "menumobi_close" || (x.className === "menumobi_close2")) {
@@ -23,8 +23,8 @@ function openNavMobi_Portrait() {
 
 function openNavMobi_Landscape() {
 
-	var x = document.getElementById("ThreelineMobi_close");
-	var y = document.getElementById("NavigationMobi_close");
+	let x = document.getElementById("ThreelineMobi_close");
+	let y = document.getElementById("NavigationMobi_close");
 
 
 	if (x.className === "ThreelineMobi_close") {
@@ -37,8 +37,8 @@ function openNavMobi_Landscape() {
 
 function closeNavMobi_Landscape() {
 
-	var x = document.getElementById("NavigationMobi_close");
-	var y = document.getElementById("ThreelineMobi_close");
+	let x = document.getElementById("NavigationMobi_close");
+	let y = document.getElementById("ThreelineMobi_close");
 
 	if (x.className === "NavigationMobi_open") {
 		x.className = "NavigationMobi_close2";
